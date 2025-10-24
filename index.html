@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Aparna - Vision & Mission</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Purple Palette inspired by your images */
+        .bg-dr-purple {
+            background-color: #7D6098;
+        }
+
+        /* Primary Purple - similar to the background */
+        .text-dr-purple {
+            color: #7D6098;
+        }
+
+        .bg-dr-dark-purple {
+            background-color: #7D6098;
+        }
+
+        /* Darker shade for accents */
+        .text-dr-dark-purple {
+            color: #916be7;
+        }
+
+        .bg-dr-light-purple {
+            background-color: #EDE9FE;
+        }
+
+        /* Very light purple for contrast */
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Timeline specific styling */
+        .timeline-item {
+
+
+
+
+
+
+
+            position: relative;
+            padding-left: 2.5rem;
+            /* Space for the dot */
+            padding-bottom: 2.5rem;
+        }
+
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.25rem;
+            width: 0.75rem;
+            height: 0.75rem;
+            background-color: #4c1d95;
+            /* Dark purple dot */
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 0.35rem;
+            /* Center the line */
+            top: 0.25rem;
+            height: 100%;
+            width: 2px;
+            background-color: #a78bfa;
+            /* Lighter purple line */
+            z-index: 5;
+        }
+
+        /* No line after the last item */
+        .timeline-item:last-child::after {
+            height: 0;
+        }
+
+        /* Adjust after for longer content to ensure line covers */
+        .timeline-item.long-content::after {
+            height: calc(100% + 1.5rem);
+            /* Extend line slightly for long content */
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dr-purple': '#8B5CF6',
+                        'dr-dark-purple': '#4c1d95',
+                        'dr-light-purple': '#EDE9FE',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-dr-purple text-gray-800 leading-relaxed">
+
+    <!-- Navbar -->
+    <nav class="bg-dr-dark-purple p-4 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold tracking-wider">Dr Aparna</a>
+
+            <!-- Mobile Menu Button (Hamburger) --><button class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Based on Image 4 -->
+    <section id="hero" class="min-h-screen flex items-center justify-center p-8 bg-dr-purple text-white relative">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="text-center md:text-left mb-10 md:mb-0 md:w-1/2">
+                <h1 class="text-7xl sm:text-8xl md:text-9xl font-extrabold mb-4 leading-tight tracking-tighter">
+                    Dr<br>Aparna<br>Volluru
+                </h1>
+                <p class="text-3xl md:text-4xl font-semibold mt-8 mb-6">
+                    Welcome to explore<br>my Vision and Mission!
+                </p>
+            </div>
+            <div class="md:w-1/2 md:pl-12 relative flex justify-center md:justify-start">
+                <div
+                    class="hidden md:block w-1 h-3/4 bg-dr-dark-purple absolute left-0 top-1/2 transform -translate-y-1/2 rounded-full">
+                </div>
+                <p class="text-base md:text-lg max-w-xl">
+                    A Psychologist | An Academician | An Entrepreneur | A Philanthropist The result of my 3 decades
+                    long career in Europe as a Psychologist, an Educationist and Researcher is my unquenchable thirst
+                    to bring Early Childhood Education and Care to the grassroots in India and create pools of skilled
+                    and trained teachers across pan India and employ them. All this is being carried out since my return
+                    to India in 2015. Mr RITZY Group of companies, RITZY Foundation, RITZY Educational Society, RITZY
+                    Trust and Indian Council of Early Childhood are few of the organisations that I established to
+                    realise
+                    my mission and vision and I head these organisations as Founder and Chairman (Chair person).
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dr-dark-purple text-white p-8 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2019 Dr Aparna. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-dr-light-purple transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-dr-light-purple transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
