@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Aparna - Vision & Mission</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // Using the base colors for better consistency
+            'dr-purple': '#8B5CF6',
+            'dr-dark-purple': '#4c1d95',
+            'dr-light-purple': '#EDE9FE',
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles for the new Timeline Layout -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* ===== New Timeline Styles for Milestones section (Based on image) ===== */
+
+    /* General item spacing and layout */
+    .milestone-item {
+      position: relative;
+      padding-left: 2.5rem;
+      /* Space for the dot and content separation */
+      padding-bottom: 3rem;
+      /* Spacing between events */
+    }
+
+    /* The circle dot on the timeline */
+    .milestone-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.25rem;
+      width: 0.75rem;
+      height: 0.75rem;
+      background-color: white;
+      /* White dot against purple background */
+      border: 2px solid white;
+      /* Border color is the same as the background */
+      border-radius: 50%;
+      z-index: 20;
+      /* Ensure dot is on top of the line */
+    }
+
+    /* Remove bottom padding for the final item */
+    .milestone-item.last-item {
+      padding-bottom: 0.5rem;
+    }
+
+    /* Year/Date label on the left */
+    .milestone-item .year-label {
+      position: absolute;
+      right: 100%;
+      /* Pushes the label to the left of the vertical line */
+      top: 0;
+      padding-right: 1.5rem;
+      /* Space between the label and the vertical line */
+      font-size: 1.125rem;
+      /* Large text */
+      font-weight: 700;
+      /* Bold */
+      color: white;
+      /* White text against the purple background */
+      text-align: right;
+      width: 150px;
+      /* Give a fixed width to align the dates */
+    }
+
+    /* Content box on the right */
+    .milestone-item .content-box {
+      padding: 0.5rem 0;
+      /* Add some vertical spacing to the content */
+    }
+
+    /* Adjust timeline for smaller screens to prevent overlap */
+    @media (max-width: 768px) {
+      .milestone-item {
+        padding-left: 1.5rem;
+        /* Reduce padding for smaller screens */
+      }
+
+      /* Hide the year label on small screens to make the timeline readable */
+      .milestone-item .year-label {
+        display: none;
+      }
+
+      /* Adjust the vertical line position for smaller screens */
+      .max-w-3xl > div:first-child {
+        left: 0.35rem;
+        /* Re-center line */
+        margin-left: 0;
+      }
+
+      /* Adjust dot position for smaller screens */
+      .milestone-item::before {
+        left: -0.2rem;
+      }
+    }
+  </style>
+
+</head>
+
+<body class="bg-dr-purple text-gray-800 leading-relaxed">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-dr-dark-purple p-4 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-white text-2xl font-bold tracking-wider">Dr Aparna</a>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="min-h-screen flex items-center justify-center p-8 bg-dr-purple text-white relative">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div class="text-center md:text-left mb-10 md:mb-0 md:w-1/2">
+        <h1 class="text-7xl sm:text-8xl md:text-9xl font-extrabold mb-4 leading-tight tracking-tighter">
+          Dr<br>Aparna<br>Volluru
+        </h1>
+        <p class="text-3xl md:text-4xl font-semibold mt-8 mb-6">
+          Welcome to explore<br>my Vision and Mission!
+        </p>
+      </div>
+      <div class="md:w-1/2 md:pl-12 relative flex justify-center md:justify-start">
+        <!-- Decorative vertical line on desktop -->
+        <div
+          class="hidden md:block w-1 h-3/4 bg-dr-dark-purple absolute left-0 top-1/2 transform -translate-y-1/2 rounded-full">
+        </div>
+        <p class="text-xl md:text-2xl max-w-xl text-center">
+          A Psychologist | An Academician | An Entrepreneur | A Philanthropist The result of my 3 decades
+          long career in Europe as a Psychologist, an Educationist and Researcher is my unquenchable thirst
+          to bring Early Childhood Education and Care to the grassroots in India and create pools of skilled
+          and trained teachers across pan India and employ them. All this is being carried out since my return
+          to India in 2015. Mr RITZY Group of companies, RITZY Foundation, RITZY Educational Society, RITZY
+          Trust and Indian Council of Early Childhood are few of the organisations that I established to
+          realise my mission and vision and I head these organisations as Founder and Chairman (Chair person).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Milestones Section - Redesigned as per image -->
+  <section id="milestones" class="py-16 bg-dr-purple text-white">
+    <div class="container mx-auto px-6 lg:px-8">
+      <h2 class="text-5xl font-extrabold text-white mb-12 text-center tracking-tighter">Milestones</h2>
+
+      <div class="max-w-3xl mx-auto relative pt-4">
+        <!-- Vertical line for the timeline (matches dot color) -->
+        <div class="absolute left-0 top-0 h-full w-0.5 bg-white ml-2 md:ml-4"></div>
+
+        <!-- Timeline Items (using the new structure) -->
+
+        <div class="milestone-item">
+          <div class="year-label">UK Queen's Award</div>
+          <div class="content-box">
+            <p class="text-lg">UK Queen's Award.</p>
+          </div>
+        </div>
+
+        <div class="milestone-item">
+          <div class="year-label">2004</div>
+          <div class="content-box">
+            <p class="text-lg">EU's Joint Research Commission's Award as **Best IT Consultant of the year** was the result of my dedicated work in the Human medicines Department in Ispra, Italy.</p>
+          </div>
+        </div>
+
+        <div class="milestone-item">
+          <div class="year-label">Return to Academia</div>
+          <div class="content-box">
+            <p class="text-lg">From a successful IT Consultant to getting back to University for completing my **Master's in English from Cambridge** and then a **Doctorate in Child Psychology from the University of Essex**, was a different saga of my life.</p>
+          </div>
+        </div>
+
+        <div class="milestone-item">
+          <div class="year-label">The Uphill Walk</div>
+          <div class="content-box">
+            <p class="text-lg">The journey since then has been always an uphill walk. I familiarised myself with the emotions associated with vulnerability (uncertainty, risk, and emotional exposure) to become more courageous and engage in greater work.</p>
+          </div>
+        </div>
+
+        <div class="milestone-item">
+          <div class="year-label">2014</div>
+          <div class="content-box">
+            <p class="text-lg">Received the World's most prestigious award - **Open Knowledge Award for Best Business Initiative**. This was the ice breaker of my life.</p>
+          </div>
+        </div>
+
+        <div class="milestone-item">
+          <div class="year-label">2014 Launch</div>
+          <div class="content-box">
+            <p class="text-lg">Opened my first Pre-school in India, becoming the **FIRST Italian Preschool Chain** to enter the Franchising World of Preschool Business globally. This fulfilled my mother's dream of bringing one of Europe's best Kindergartens to millions of children in India. **My School ITALY** also became the **FIRST Preschool in the WORLD** to introduce Neuro Linguistic Programming (NLP) in their teaching methodology.</p>
+          </div>
+        </div>
+
+        <div class="milestone-item">
+          <div class="year-label">2019</div>
+          <div class="content-box">
+            <p class="text-lg">Set a **Guinness Book of World record as Most Humanitarian Person of the World** for my work in war-hit African countries and with tribals of South East Asia.</p>
+          </div>
+        </div>
+
+        <!-- 2019 European Business Awards (June) -->
+        <div class="milestone-item">
+          <div class="year-label">June 2019</div>
+          <div class="content-box">
+            <p class="text-lg">My School ITALY was selected as an **'Ones to Watch Company'** by European Business Awards for its par excellence teaching methodologies. The teaching tool, **DECANT**, and Assessment system, **MILESTONES**, are the result of 30 years of experience in the ECEC sector and my research as a Child Psychologist.</p>
+          </div>
+        </div>
+
+        <!-- 2019 Ritzy Schools Awards (June) -->
+        <div class="milestone-item">
+          <div class="year-label">June</div>
+          <div class="content-box">
+            <p class="text-lg">Ritzy Schools received the **India Didactic Award (IDA)** for its Curriculum & Methodologies.</p>
+          </div>
+        </div>
+
+        <!-- 2019 European Business Awards (Dec 4) -->
+        <div class="milestone-item">
+          <div class="year-label">Dec 4</div>
+          <div class="content-box">
+            <p class="text-lg">My School ITALY was declared as **National Winners of Italy** by European Business Awards.</p>
+          </div>
+        </div>
+
+        <!-- 2019 Ritzy Schools Awards (Dec 14) -->
+        <div class="milestone-item">
+          <div class="year-label">Dec 14</div>
+          <div class="content-box">
+            <p class="text-lg">Ritzy Schools bagged the **Micro, Small, and Medium Enterprises (MSME) Award**.</p>
+          </div>
+        </div>
+
+        <!-- Final "Not the last!" marker -->
+        <div class="milestone-item last-item" style="padding-bottom: 0;">
+          <div class="year-label">Not the last!</div>
+          <div class="content-box">
+            <!-- Empty content box for marker -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dr-dark-purple p-8 text-white text-center">
+    <div class="container mx-auto">
+      <p>&copy; 2019 Dr Aparna. All rights reserved.</p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a href="#" class="hover:text-dr-light-purple transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-dr-light-purple transition-colors">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
