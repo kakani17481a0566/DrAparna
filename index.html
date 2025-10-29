@@ -94,12 +94,11 @@
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
 
-    /* Hero Section with Left/Right Layout */
+    /* Hero Section with Left/Right Layout - FIXED FOR MOBILE */
     #hero {
       position: relative;
       width: 100%;
-      height: 100vh;
-      min-height: 700px;
+      min-height: 100vh;
       overflow: hidden;
       display: flex;
       align-items: center;
@@ -231,7 +230,7 @@
       box-shadow: 0 15px 30px rgba(255, 255, 255, 0.3);
     }
 
-    /* Responsive adjustments */
+    /* Responsive adjustments - FIXED FOR MOBILE */
     @media (max-width: 1200px) {
       .hero-container {
         padding: 0 1.5rem;
@@ -256,12 +255,18 @@
     }
 
     @media (max-width: 992px) {
+      #hero {
+        min-height: auto;
+        padding: 5rem 0 3rem;
+      }
+
       .hero-container {
         flex-direction: column-reverse;
         text-align: center;
-        padding: 2rem;
+        padding: 0 2rem;
         justify-content: center;
         gap: 2rem;
+        height: auto;
       }
 
       .hero-content {
@@ -277,6 +282,7 @@
 
       .hero-separator {
         width: 80%;
+        max-width: 300px;
         height: 3px;
         margin: 1rem auto;
         background: linear-gradient(to right, transparent, var(--dr-accent), transparent);
@@ -329,7 +335,7 @@
 
     @media (max-width: 576px) {
       .hero-container {
-        padding: 1rem;
+        padding: 0 1rem;
       }
 
       .hero-title {
@@ -900,7 +906,7 @@
         <a href="#">Terms of Service</a> |
         <a href="#">Sitemap</a>
       </div>
-      <p class="copyright">&copy; 2025 Dr. Aparna Volluru. All rights reserved.</p>
+      <p class="copyright">&copy; 2019 Dr. Aparna Volluru. All rights reserved.</p>
     </div>
   </footer>
 
