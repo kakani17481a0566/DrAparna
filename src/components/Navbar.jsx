@@ -46,7 +46,11 @@ const Navbar = () => {
 
                     {/* Center Logo */}
                     <div className="flex-0 mx-4">
-                        <Link to="/" className="flex flex-col items-center group">
+                        <Link
+                            to="/"
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                            className="flex flex-col items-center group"
+                        >
                             <span className="font-serif text-3xl font-bold text-dr-dark-purple tracking-wide group-hover:text-dr-accent transition-colors duration-300">
                                 Dr Aperna
                             </span>
@@ -72,7 +76,7 @@ const Navbar = () => {
 
                 {/* Mobile Header */}
                 <div className="md:hidden flex justify-between items-center">
-                    <Link to="/">
+                    <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                         <span className="font-serif text-2xl font-bold text-dr-dark-purple tracking-wide">
                             Dr Aperna
                         </span>
