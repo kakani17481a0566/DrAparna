@@ -22,7 +22,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section id="hero" className="relative w-full min-h-[90vh] flex items-center justify-center bg-white overflow-hidden">
+        <section id="hero" className="relative w-full min-h-[90vh] flex items-center justify-center bg-white overflow-hidden pt-32 md:pt-40">
             {/* Soft Background Element */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-dr-light-purple/30 rounded-full blur-[100px] -z-10 opacity-70"></div>
 
