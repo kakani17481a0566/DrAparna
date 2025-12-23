@@ -1,3 +1,5 @@
+import { FaLinkedinIn, FaInstagram, FaXTwitter, FaEnvelope, FaLocationDot } from 'react-icons/fa6';
+
 const Footer = () => {
     const currentYear = new Date().getFullYear();
 
@@ -12,10 +14,10 @@ const Footer = () => {
                         Pioneering the future of Early Childhood Education through neuroscience, innovation, and unwavering compassion.
                     </p>
                     <div className="flex space-x-4 pt-2">
-                        {/* Social Placeholders */}
-                        <SocialIcon label="Li" />
-                        <SocialIcon label="Tw" />
-                        <SocialIcon label="In" />
+                        {/* Social Icons */}
+                        <SocialIcon icon={<FaLinkedinIn />} href="https://www.linkedin.com/in/draperna" label="LinkedIn" />
+                        <SocialIcon icon={<FaXTwitter />} href="https://twitter.com/draperna" label="Twitter" />
+                        <SocialIcon icon={<FaInstagram />} href="#" label="Instagram" />
                     </div>
                 </div>
 
@@ -45,11 +47,11 @@ const Footer = () => {
                     <h4 className="text-white font-semibold mb-6">Contact</h4>
                     <ul className="space-y-3 text-sm">
                         <li className="flex items-start gap-3">
-                            <span className="text-dr-accent">✉</span>
+                            <span className="text-dr-accent mt-1"><FaEnvelope /></span>
                             <span>contact@draparna.com</span>
                         </li>
                         <li className="flex items-start gap-3">
-                            <span className="text-dr-accent">📍</span>
+                            <span className="text-dr-accent mt-1"><FaLocationDot /></span>
                             <span>London, UK / Hyderabad, India</span>
                         </li>
                     </ul>
@@ -64,9 +66,15 @@ const Footer = () => {
     );
 };
 
-const SocialIcon = ({ label }) => (
-    <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-dr-accent hover:text-white transition-all duration-300 text-xs font-bold">
-        {label}
+const SocialIcon = ({ icon, href, label }) => (
+    <a
+        href={href}
+        aria-label={label}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-dr-accent hover:text-white transition-all duration-300 text-base"
+    >
+        {icon}
     </a>
 );
 
