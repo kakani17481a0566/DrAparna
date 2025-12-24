@@ -3,7 +3,7 @@ import React from 'react';
 const DigitalCard = () => {
     return (
         <div className="w-full min-h-screen pt-24 pb-12 px-4 md:px-12 flex flex-col items-center bg-slate-50">
-            <h1 className="text-3xl font-serif font-bold text-dr-dark-purple mb-8">Digital Card</h1>
+
             <div className="w-full max-w-2xl h-auto shadow-2xl rounded-xl overflow-hidden border border-gray-100 transform transition-transform duration-300 hover:scale-[1.01]">
                 <img
                     src="/digital-card_page-0001.jpg"
