@@ -29,7 +29,7 @@ const Footer = () => {
                         <li><Link to="/" onClick={() => window.scrollTo(0, 0)} className="hover:text-dr-accent transition-colors">Home</Link></li>
                         <li><Link to="/vision" onClick={() => window.scrollTo(0, 0)} className="hover:text-dr-accent transition-colors">Vision & Mission</Link></li>
                         <li><Link to="/milestones" onClick={() => window.scrollTo(0, 0)} className="hover:text-dr-accent transition-colors">Milestones</Link></li>
-                        <li><a href="/ApernaVolluru.pdf" target="_blank" className="hover:text-dr-accent transition-colors">Digital Card</a></li>
+                        <li><a href="/digital-card.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-dr-accent transition-colors">Digital Card</a></li>
                     </ul>
                 </div>
 

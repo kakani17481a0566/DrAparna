@@ -48,6 +48,7 @@ const Hero = () => {
                     <img
                         src={apernaImg}
                         alt="Dr Aperna Volluru"
+                        title="Dr Aperna Volluru - Visionary Entrepreneur & Educationist"
                         className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white shadow-lg"
                     />
                 </div>

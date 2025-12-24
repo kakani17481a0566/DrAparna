@@ -69,7 +69,7 @@ const Navbar = () => {
                         <div className="flex-1 flex justify-end space-x-8 items-center">
                             <NavLink to="/milestones" label="Milestones" active={isActive('/milestones')} />
                             <a
-                                href="/ApernaVolluru.pdf"
+                                href="/digital-card.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="font-sans text-sm font-medium text-dr-text-dark hover:text-dr-accent transition-colors duration-300 border border-dr-dark-purple/20 px-4 py-2 rounded-full hover:border-dr-accent"
@@ -135,7 +135,7 @@ const Navbar = () => {
                         onClick={closeMenu}
                     />
                     <a
-                        href="/ApernaVolluru.pdf"
+                        href="/digital-card.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={closeMenu}

@@ -42,7 +42,7 @@ const Vision = () => {
                     </div>
                     <div className="md:w-1/2 flex justify-center">
                         <div className="w-full max-w-md aspect-[4/3] rounded-lg flex items-center justify-center overflow-hidden shadow-xl">
-                            <img src={visionImage} alt="Vision for Tomorrow" className="w-full h-full object-cover" />
+                            <img src={visionImage} alt="Vision for Tomorrow" title="Dr Aperna Volluru's Vision for Tomorrow in Early Education" className="w-full h-full object-cover" />
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ const Vision = () => {
                     </div>
                     <div className="md:w-1/2 flex justify-center">
                         <div className="w-full max-w-md aspect-[4/3] rounded-lg flex items-center justify-center overflow-hidden shadow-xl">
-                            <img src={missionImage} alt="Mission in Action" className="w-full h-full object-cover" />
+                            <img src={missionImage} alt="Mission in Action" title="Dr Aperna Volluru's Mission in Action: My School ITALY and Neuropi" className="w-full h-full object-cover" />
                         </div>
                     </div>
                 </div>
