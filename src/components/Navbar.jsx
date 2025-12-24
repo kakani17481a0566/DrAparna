@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -30,6 +30,10 @@ const Navbar = () => {
         ? 'py-4 bg-white/95 backdrop-blur-md shadow-md'
         : 'py-6 bg-transparent'
         }`;
+
+    const closeMenu = () => {
+        setIsMobileMenuOpen(false);
+    };
 
     return (
         <nav className={navClasses}>
@@ -76,7 +80,13 @@ const Navbar = () => {
 
                 {/* Mobile Header */}
                 <div className="md:hidden flex justify-between items-center">
-                    <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                    <Link
+                        to="/"
+                        onClick={() => {
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                            closeMenu();
+                        }}
+                    >
                         <span className="font-serif text-2xl font-bold text-dr-dark-purple tracking-wide">
                             Dr Aperna
                         </span>
@@ -97,13 +107,35 @@ const Navbar = () => {
                 <div className={`fixed inset-0 bg-white z-40 flex flex-col justify-center items-center transition-all duration-500 ease-in-out ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
                     }`}>
                     <div className="flex flex-col items-center space-y-8 text-center">
-                        <MobileNavLink to="/" label="Home" active={isActive('/')} isOpen={isMobileMenuOpen} delay="100ms" />
-                        <MobileNavLink to="/vision" label="Vision" active={isActive('/vision')} isOpen={isMobileMenuOpen} delay="200ms" />
-                        <MobileNavLink to="/milestones" label="Milestones" active={isActive('/milestones')} isOpen={isMobileMenuOpen} delay="300ms" />
+                        <MobileNavLink
+                            to="/"
+                            label="Home"
+                            active={isActive('/')}
+                            isOpen={isMobileMenuOpen}
+                            delay="100ms"
+                            onClick={closeMenu}
+                        />
+                        <MobileNavLink
+                            to="/vision"
+                            label="Vision"
+                            active={isActive('/vision')}
+                            isOpen={isMobileMenuOpen}
+                            delay="200ms"
+                            onClick={closeMenu}
+                        />
+                        <MobileNavLink
+                            to="/milestones"
+                            label="Milestones"
+                            active={isActive('/milestones')}
+                            isOpen={isMobileMenuOpen}
+                            delay="300ms"
+                            onClick={closeMenu}
+                        />
                         <a
                             href="/ApernaVolluru.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
+                            onClick={closeMenu}
                             style={{ transitionDelay: isMobileMenuOpen ? '400ms' : '0ms' }}
                             className={`mt-4 px-8 py-3 rounded-full border border-dr-dark-purple text-dr-dark-purple font-medium text-lg hover:bg-dr-dark-purple hover:text-white transition-all duration-700 ease-out transform ${isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
                         >
@@ -123,15 +155,33 @@ const NavLink = ({ to, label, active }) => (
     </Link>
 );
 
-const MobileNavLink = ({ to, label, active, isOpen, delay }) => (
-    <Link
-        to={to}
-        style={{ transitionDelay: isOpen ? delay : '0ms' }}
-        className={`font-serif text-3xl font-bold transition-all duration-700 ease-out transform ${active ? 'text-dr-accent' : 'text-dr-text-dark'
-            } ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
-    >
-        {label}
-    </Link>
-);
+const MobileNavLink = ({ to, label, active, isOpen, delay, onClick }) => {
+    const navigate = useNavigate();
+    const { pathname } = useLocation();
+
+    const handleClick = (e) => {
+        e.preventDefault();
+
+        if (pathname === to) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+            navigate(to);
+        }
+
+        if (onClick) onClick();
+    };
+
+    return (
+        <a
+            href={to}
+            onClick={handleClick}
+            style={{ transitionDelay: isOpen ? delay : '0ms' }}
+            className={`font-serif text-3xl font-bold transition-all duration-700 ease-out transform cursor-pointer ${active ? 'text-dr-accent' : 'text-dr-text-dark'
+                } ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+        >
+            {label}
+        </a>
+    );
+};
 
 export default Navbar;
