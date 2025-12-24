@@ -1,4 +1,6 @@
 import { useEffect, useRef } from 'react';
+import visionImage from '../assets/vision_image.png';
+import missionImage from '../assets/mission_image.png';
 
 const Vision = () => {
     const sectionRef = useRef(null);
@@ -39,8 +41,8 @@ const Vision = () => {
                         </p>
                     </div>
                     <div className="md:w-1/2 flex justify-center">
-                        <div className="w-full max-w-md aspect-[4/3] bg-dr-light-purple/20 rounded-lg flex items-center justify-center border border-dr-light-purple/30">
-                            <span className="font-serif text-dr-dark-purple/40 text-6xl">Vision</span>
+                        <div className="w-full max-w-md aspect-[4/3] rounded-lg flex items-center justify-center overflow-hidden shadow-xl">
+                            <img src={visionImage} alt="Vision for Tomorrow" className="w-full h-full object-cover" />
                         </div>
                     </div>
                 </div>
@@ -58,8 +60,8 @@ const Vision = () => {
                         </p>
                     </div>
                     <div className="md:w-1/2 flex justify-center">
-                        <div className="w-full max-w-md aspect-[4/3] bg-purple-50 rounded-lg flex items-center justify-center border border-purple-100">
-                            <span className="font-serif text-dr-accent/40 text-6xl">Mission</span>
+                        <div className="w-full max-w-md aspect-[4/3] rounded-lg flex items-center justify-center overflow-hidden shadow-xl">
+                            <img src={missionImage} alt="Mission in Action" className="w-full h-full object-cover" />
                         </div>
                     </div>
                 </div>
