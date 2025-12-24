@@ -68,14 +68,12 @@ const Navbar = () => {
                         {/* Right Links */}
                         <div className="flex-1 flex justify-end space-x-8 items-center">
                             <NavLink to="/milestones" label="Milestones" active={isActive('/milestones')} />
-                            <a
-                                href="/digital-card.pdf"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                            <Link
+                                to="/digital-card"
                                 className="font-sans text-sm font-medium text-dr-text-dark hover:text-dr-accent transition-colors duration-300 border border-dr-dark-purple/20 px-4 py-2 rounded-full hover:border-dr-accent"
                             >
                                 Digital Card
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
@@ -134,16 +132,15 @@ const Navbar = () => {
                         delay="300ms"
                         onClick={closeMenu}
                     />
-                    <a
-                        href="/digital-card.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
+
+                    <Link
+                        to="/digital-card"
                         onClick={closeMenu}
                         style={{ transitionDelay: isMobileMenuOpen ? '400ms' : '0ms' }}
-                        className={`mt-4 px-8 py-3 rounded-full border border-dr-dark-purple text-dr-dark-purple font-medium text-lg hover:bg-dr-dark-purple hover:text-white transition-all duration-700 ease-out transform ${isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+                        className={`mt-4 px-8 py-3 rounded-full border border-dr-dark-purple text-dr-dark-purple font-medium text-lg hover:bg-dr-dark-purple hover:text-white transition-all duration-700 ease-out transform block text-center ${isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
                     >
                         Digital Card
-                    </a>
+                    </Link>
                 </div>
             </div>
         </>
