@@ -1,4 +1,5 @@
 import { FaLinkedinIn, FaInstagram, FaXTwitter, FaEnvelope, FaLocationDot } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -25,9 +26,9 @@ const Footer = () => {
                 <div>
                     <h4 className="text-white font-semibold mb-6">Quick Links</h4>
                     <ul className="space-y-3 text-sm">
-                        <li><a href="/" className="hover:text-dr-accent transition-colors">Home</a></li>
-                        <li><a href="/vision" className="hover:text-dr-accent transition-colors">Vision & Mission</a></li>
-                        <li><a href="/milestones" className="hover:text-dr-accent transition-colors">Milestones</a></li>
+                        <li><Link to="/" onClick={() => window.scrollTo(0, 0)} className="hover:text-dr-accent transition-colors">Home</Link></li>
+                        <li><Link to="/vision" onClick={() => window.scrollTo(0, 0)} className="hover:text-dr-accent transition-colors">Vision & Mission</Link></li>
+                        <li><Link to="/milestones" onClick={() => window.scrollTo(0, 0)} className="hover:text-dr-accent transition-colors">Milestones</Link></li>
                         <li><a href="/ApernaVolluru.pdf" target="_blank" className="hover:text-dr-accent transition-colors">Digital Card</a></li>
                     </ul>
                 </div>
