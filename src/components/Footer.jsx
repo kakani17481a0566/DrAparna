@@ -16,7 +16,7 @@ const Footer = () => {
                     </p>
                     <div className="flex space-x-4 pt-2">
                         {/* Social Icons */}
-                        <SocialIcon icon={<FaLinkedinIn />} href="https://www.linkedin.com/in/draperna" label="LinkedIn" />
+                        <SocialIcon icon={<FaLinkedinIn />} href="https://www.linkedin.com/in/myschoolitaly" label="LinkedIn" />
                         <SocialIcon icon={<FaXTwitter />} href="https://twitter.com/draperna" label="Twitter" />
                         <SocialIcon icon={<FaInstagram />} href="#" label="Instagram" />
                     </div>
