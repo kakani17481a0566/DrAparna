@@ -49,6 +49,10 @@ const JourneySections = () => {
                 title="I'M MY OWN WOMAN"
                 bgClass="bg-slate-50"
                 count={2}
+                videos={[
+                    { title: "Dummy Video Title 1", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" },
+                    { title: "Dummy Video Title 2", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" }
+                ]}
             />
 
             {/* Photographs Carousel */}
@@ -158,6 +162,10 @@ const JourneySections = () => {
                 bgClass="bg-slate-50"
                 textClass="text-dr-dark-purple"
                 count={2}
+                videos={[
+                    { title: "Dummy Video Title 1", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" },
+                    { title: "Dummy Video Title 2", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" }
+                ]}
             />
 
             {/* Inception Carousel */}
@@ -225,6 +233,10 @@ const JourneySections = () => {
                 title="MEDIA & PRESS COVERAGE"
                 bgClass="bg-slate-50"
                 count={2}
+                videos={[
+                    { title: "Dummy Video Title 1", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" },
+                    { title: "Dummy Video Title 2", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" }
+                ]}
             />
 
             {/* Best of Opinion */}
@@ -232,6 +244,12 @@ const JourneySections = () => {
                 title="HAVE BEST OF THE OPINION"
                 bgClass="bg-white"
                 count={4}
+                videos={[
+                    { title: "Dummy Video Title 1", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" },
+                    { title: "Dummy Video Title 2", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" },
+                    { title: "Dummy Video Title 3", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" },
+                    { title: "Dummy Video Title 4", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" }
+                ]}
             />
 
             {/* Results Beyond Calculation 2 */}
@@ -308,6 +326,10 @@ const JourneySections = () => {
                 title="THE ACTION IS ON!"
                 bgClass="bg-white"
                 count={2}
+                videos={[
+                    { title: "Dummy Video Title 1", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" },
+                    { title: "Dummy Video Title 2", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" }
+                ]}
             />
 
         </div>

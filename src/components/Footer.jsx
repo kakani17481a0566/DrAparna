@@ -18,7 +18,7 @@ const Footer = () => {
                         {/* Social Icons */}
                         <SocialIcon icon={<FaLinkedinIn />} href="https://www.linkedin.com/in/myschoolitaly/" label="LinkedIn" />
                         <SocialIcon icon={<FaXTwitter />} href="https://twitter.com/draperna" label="Twitter" />
-                        <SocialIcon icon={<FaInstagram />} href="#" label="Instagram" />
+                        <SocialIcon icon={<FaInstagram />} href="https://dummy-link.com" label="Instagram" />
                     </div>
                 </div>
 
@@ -37,9 +37,9 @@ const Footer = () => {
                 <div>
                     <h4 className="text-white font-semibold mb-6">Legal</h4>
                     <ul className="space-y-3 text-sm">
-                        <li><a href="#" className="hover:text-dr-accent transition-colors">Privacy Policy</a></li>
-                        <li><a href="#" className="hover:text-dr-accent transition-colors">Terms of Service</a></li>
-                        <li><a href="#" className="hover:text-dr-accent transition-colors">Cookie Policy</a></li>
+                        <li><a href="https://dummy-link.com" className="hover:text-dr-accent transition-colors">Privacy Policy</a></li>
+                        <li><a href="https://dummy-link.com" className="hover:text-dr-accent transition-colors">Terms of Service</a></li>
+                        <li><a href="https://dummy-link.com" className="hover:text-dr-accent transition-colors">Cookie Policy</a></li>
                     </ul>
                 </div>
 
@@ -61,7 +61,7 @@ const Footer = () => {
 
             {/* Bottom Bar */}
             <div className="border-t border-white/10 pt-8 text-center text-xs text-gray-500">
-                <p>&copy; {currentYear} Dr Aperna Volluru. All rights reserved.</p>
+                <p>&copy; 2015 Dr Aperna Volluru. All rights reserved.</p>
             </div>
         </footer>
     );
