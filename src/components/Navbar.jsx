@@ -27,8 +27,8 @@ const Navbar = () => {
     };
 
     const navClasses = `fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${scrolled
-        ? 'py-4 bg-white/95 backdrop-blur-md shadow-md'
-        : 'py-6 bg-transparent'
+        ? 'py-1 bg-white/95 backdrop-blur-md shadow-md'
+        : 'py-4 bg-transparent'
         }`;
 
     const closeMenu = () => {
