@@ -18,9 +18,19 @@ const JourneySections = () => {
                 title="ENGAGE, ENLIGHTEN, ENCOURAGE AND ESPECIALLY...BE YOURSELF!" 
                 imageBasePath="/image/ENGAGE, ENLIGHTEN, ENCOURAGE AND ESPECIALLY...BE YOURSELF!"
                 images={[
-                    'slide_01.jpg', 'slide_02.jpg', 'slide_03.jpg', 'slide_04.jpg', 'slide_05.jpg',
-                    'slide_06.jpg', 'slide_07.jpg', 'slide_08.jpg', 'slide_09.jpg', 'slide_10.jpg'
-                ]}
+    'slide_01.jpg',
+    'slide_02.jpg',
+    'slide_07.jpg',
+    'slide_10.jpg',
+    'IMG_20191204_234301.jpg',
+    'S20.jpg',
+    'S22.jpg',
+    'S23.jpg',
+    'S24.jpg',
+    'S25.jpg',
+    'S26.jpg',
+    'S27.jpg'
+]}
             />
 
             {/* Own Woman */}
@@ -36,9 +46,17 @@ const JourneySections = () => {
                 subtitle='"When words become unclear, I shall focus with Photographs."'
                 imageBasePath="/image/When words become unclear, I shall focus with Photographs"
                 images={[
-                    'slide_01.jpg', 'slide_02.jpg', 'slide_03.jpg', 'slide_04.jpg', 'slide_05.jpg',
-                    'slide_06.jpg', 'slide_07.jpg', 'slide_08.jpg', 'slide_09.jpg'
-                ]}
+    'slide_05.jpg',
+    'slide_07.jpg',
+    'slide_08.jpg',
+    'slide_09.jpg',
+    'S8.jpg',
+    'S10.jpg',
+    'S11.jpg',
+    'S12.jpg',
+    'S13.jpg',
+    'S14.jpg'
+]}
             />
 
             {/* Student Section */}
@@ -136,8 +154,21 @@ const JourneySections = () => {
                 title="THE INCEPTION" 
                 imageBasePath="/image/THE INCEPTION"
                 images={[
-                    'slide_07.jpg', 'slide_06.jpg', 'slide_05.jpg', 'slide_04.jpg', 'slide_03.jpg', 'slide_02.jpg', 'slide_01.jpg'
-                ]}
+    'slide_07.jpg',
+    'slide_06.jpg',
+    'slide_05.jpg',
+    'slide_04.jpg',
+    'slide_03.jpg',
+    'slide_02.jpg',
+    'slide_01.jpg',
+    'S39.jpg',
+    'S40.jpg',
+    'S41.jpg',
+    'S42.jpg',
+    'S43.jpg',
+    'S44.jpg',
+    'S45.jpg'
+]}
             />
 
             {/* Entrepreneur Section */}
