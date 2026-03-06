@@ -12,13 +12,10 @@ const JourneySections = () => {
                 bgClass="bg-white"
                 videos={[
                     {
-                        title: "European Business Award - 1",
-                        description: "Dr. Aparna's remarkable journey and recognition at the European Business Awards.",
-                        youtubeLink: "https://www.youtube.com/watch?v=XySHccUU2NY"
+                        // title: "European Business Award - 1",
+                        youtubeLink: "/Videos/EUROPEAN BUSINESS AWARD/video_1.mp4"
                     },
                     {
-                        title: "European Business Award - 2",
-                        description: "Dr. Aparna's remarkable journey and recognition at the European Business Awards.",
                         youtubeLink: "https://www.youtube.com/watch?v=BdyDktqjdpY"
                     }
                 ]}
@@ -113,7 +110,7 @@ const JourneySections = () => {
 
                 <div className="mt-8">
                     <h3 className="font-lato font-bold text-xl text-dr-dark-purple mb-4">Some of my Professional Affiliations:</h3>
-                    <ul className="list-disc pl-5 space-y-2 text-base text-gray-700">
+                    <ul className="list-disc pl-5 space-y-2 text-base text-dr-text-dark">
                         <li>Member of the Society of Italian Anglistica (AIA)</li>
                         <li>Member of the European Society for the Study of English (THEY)</li>
                         <li>Member of the Italian American Psychological Society</li>
@@ -123,19 +120,19 @@ const JourneySections = () => {
 
                 <div className="mt-8">
                     <h3 className="font-lato font-bold text-xl text-dr-dark-purple mb-4">Some of my Publications</h3>
-                    <ul className="list-disc pl-5 space-y-2 text-sm text-gray-700">
-                        <li>Dr Aperna RV and Dr Lipson H "Evolving process of speech in Children’s Language Development" (2013), Journal of Educational Measurement.</li>
-                        <li>Dr Aperna RV and Dr W. Acquino "Insights to the Language Development in Children 0-2 years" (2012), Journal of Educational Measurement.</li>
-                        <li>Dr Aperna RV "Pre operational Stage of Cognitive Development" (2012) - Current Opinion of Psychology.</li>
-                        <li>Dr Aperna RV "Language skill development from infancy and early childhood" (2011), Cognition and Instruction.</li>
-                        <li>Dr Aperna RV "Quality of Life measured and analysed in motherhood" (2011) Psychology of Women Quarterly.</li>
-                        <li>Dr Aperna RV and Dr Bongard C "Reactive Attachment Disorder in first stage in some children aged 3-5 years" (2011), Psychology of Sexual Orientation and Gender Diversity.</li>
-                        <li>Dr Aperna RV "Co-evolutionary variance can guide evolutionary system of father and daughter relationship" (2010), Psychology of Sexual Orientation and Gender Diversity.</li>
-                        <li>Dr Aperna RV "Crisis in Socio-emotional Development of an individual" (2010), Journal of Research in Personality.</li>
-                        <li>Dr Aperna RV "Storytelling helps child development and teach about life"(2009), Current Directions in Psychological Sciences.</li>
-                        <li>Dr Aperna RV "Milestones in Toddler Development" (2008), Annual Review of Psychology.</li>
-                        <li>Dr Aperna RV "Re-inventing the Wheel: children begin to use logic and reasoning in their thinking process" (2007) Journal of Educational Measurement.</li>
-                        <li>Dr Aperna RV Analising Advantages and Disadvantages of Infant Day Care" (2006) - Current Opinion of Psychology.</li>
+                    <ul className="list-disc pl-5 space-y-2 text-sm text-dr-text-dark">
+                        <li>Dr. Aperna RV and Dr Lipson H "Evolving process of speech in Children’s Language Development" (2013), Journal of Educational Measurement.</li>
+                        <li>Dr. Aperna RV and Dr W. Acquino "Insights to the Language Development in Children 0-2 years" (2012), Journal of Educational Measurement.</li>
+                        <li>Dr. Aperna RV "Pre operational Stage of Cognitive Development" (2012) - Current Opinion of Psychology.</li>
+                        <li>Dr. Aperna RV "Language skill development from infancy and early childhood" (2011), Cognition and Instruction.</li>
+                        <li>Dr. Aperna RV "Quality of Life measured and analysed in motherhood" (2011) Psychology of Women Quarterly.</li>
+                        <li>Dr. Aperna RV and Dr Bongard C "Reactive Attachment Disorder in first stage in some children aged 3-5 years" (2011), Psychology of Sexual Orientation and Gender Diversity.</li>
+                        <li>Dr. Aperna RV "Co-evolutionary variance can guide evolutionary system of father and daughter relationship" (2010), Psychology of Sexual Orientation and Gender Diversity.</li>
+                        <li>Dr. Aperna RV "Crisis in Socio-emotional Development of an individual" (2010), Journal of Research in Personality.</li>
+                        <li>Dr. Aperna RV "Storytelling helps child development and teach about life"(2009), Current Directions in Psychological Sciences.</li>
+                        <li>Dr. Aperna RV "Milestones in Toddler Development" (2008), Annual Review of Psychology.</li>
+                        <li>Dr. Aperna RV "Re-inventing the Wheel: children begin to use logic and reasoning in their thinking process" (2007) Journal of Educational Measurement.</li>
+                        <li>Dr. Aperna RV Analising Advantages and Disadvantages of Infant Day Care" (2006) - Current Opinion of Psychology.</li>
                     </ul>
                 </div>
             </JourneyTextSection>
@@ -228,16 +225,6 @@ const JourneySections = () => {
                 ]}
             />
 
-            {/* Media Press */}
-            <VideoCardsSection
-                title="MEDIA & PRESS COVERAGE"
-                bgClass="bg-slate-50"
-                count={2}
-                videos={[
-                    { title: "Dummy Video Title 1", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" },
-                    { title: "Dummy Video Title 2", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" }
-                ]}
-            />
 
             {/* Best of Opinion */}
             <VideoCardsSection
@@ -252,21 +239,14 @@ const JourneySections = () => {
                 ]}
             />
 
-            {/* Results Beyond Calculation 2 */}
-            <ImageCarouselSection
-                title="THE RESULTS WILL BE BEYOND CALCULATION"
-                imageBasePath="/image/THE RESULTS WILL BE BEYOND CALCULATION 2"
-                images={[
-                    'slide_01.jpg', 'slide_06.jpg', 'slide_05.jpg', 'slide_03.jpg', 'slide_02.jpg', 'slide_04.jpg'
-                ]}
-            />
+
 
             {/* On Going Projects Section custom split */}
             <section className="py-24 px-6 bg-slate-50">
                 <div className="container mx-auto max-w-7xl">
                     <div className="mb-12 animate-fade-up text-center">
                         <h2 className="font-lato text-4xl md:text-5xl font-bold mb-4 text-dr-dark-purple uppercase">
-                            ON GOING PROJECTS
+                            Empowering Human Potential
                         </h2>
                         <div className="w-24 h-1 bg-dr-accent mx-auto rounded-full mb-6"></div>
                         <p className="font-bold font-lato text-2xl italic text-dr-accent">
@@ -281,7 +261,7 @@ const JourneySections = () => {
                                 <h3 className="text-xl font-bold font-lato text-dr-dark-purple mb-3 uppercase tracking-wide">
                                     Entrepreneur Training and Development
                                 </h3>
-                                <p className="text-gray-700 leading-relaxed font-lato">
+                                <p className="text-dr-text-dark leading-relaxed font-lato">
                                     EMPOWERING PEOPLE & REVITALISING THE COMMUNITY. EDTP created as a powerful engine for encouraging entrepreneurship in economically disadvantaged communities has shown to be the equaliser that allows individuals from variant educational, socio-economic and familial backgrounds to prosper financially.
                                 </p>
                             </div>
@@ -289,7 +269,7 @@ const JourneySections = () => {
                                 <h3 className="text-xl font-bold font-lato text-dr-dark-purple mb-3 uppercase tracking-wide">
                                     Summer Camps
                                 </h3>
-                                <p className="text-gray-700 leading-relaxed font-lato">
+                                <p className="text-dr-text-dark leading-relaxed font-lato">
                                     STUDENTS GET STRONGER, BRAVER AND CONFIDENT.The Summer Camps that I organise through Ritzy Schools Educational Society introduce the students to Italian geography, language, culture, traditions, art, music, films, food, fun games apart from Aerial Art and Indo-Italian Folk Fitness.
                                 </p>
                             </div>
@@ -297,7 +277,7 @@ const JourneySections = () => {
                                 <h3 className="text-xl font-bold font-lato text-dr-dark-purple mb-3 uppercase tracking-wide">
                                     Teacher Training and Women Empowerment
                                 </h3>
-                                <p className="text-gray-700 leading-relaxed font-lato">
+                                <p className="text-dr-text-dark leading-relaxed font-lato">
                                     EARLY CHILDHOOD EDUCATION AND CARE (ECEC) FACILITIES and JOB OPPORTUNITIES FOR ALL. Striving to give education to children living in most remote parts of the Globe, geographically inaccessible terrains and to generate employment and bread earning opportunities for women and youth.
                                 </p>
                             </div>
@@ -323,12 +303,46 @@ const JourneySections = () => {
 
             {/* Action Is On */}
             <VideoCardsSection
-                title="THE ACTION IS ON!"
+                title="Purpose. Passion. Progress."
                 bgClass="bg-white"
                 count={2}
                 videos={[
                     { title: "Dummy Video Title 1", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" },
                     { title: "Dummy Video Title 2", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" }
+                ]}
+            />
+
+            {/* NeuroPi Section */}
+            <section className="py-16 px-6 bg-white text-center">
+                <div className="container mx-auto max-w-4xl animate-fade-up">
+                    <a href="https://neuropi.ai/" target="_blank" rel="noopener noreferrer" className="block hover:opacity-80 transition-opacity">
+                        <h2 className="font-lato text-3xl md:text-4xl font-bold mb-6 text-dr-accent">
+                            NeuroPi: Bridging The Human Potential
+                        </h2>
+                        <p className="font-lato text-lg md:text-xl text-dr-text-dark leading-relaxed">
+                            NeuroPi a precision neurogenomic and AI-driven technology suite that helps unlock the full potential of the human brain across every stage of life and every field of performance.
+                        </p>
+                    </a>
+                </div>
+            </section>
+
+            {/* Media Press Videos */}
+            <VideoCardsSection
+                title="MEDIA & PRESS COVERAGE"
+                bgClass="bg-slate-50"
+                count={2}
+                videos={[
+                    { title: "Dummy Video Title 1", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" },
+                    { title: "Dummy Video Title 2", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" }
+                ]}
+            />
+
+            {/* Media Press Images */}
+            <ImageCarouselSection
+               
+                imageBasePath="/image/THE RESULTS WILL BE BEYOND CALCULATION 2"
+                images={[
+                    'slide_01.jpg', 'slide_06.jpg', 'slide_05.jpg', 'slide_03.jpg', 'slide_02.jpg', 'slide_04.jpg'
                 ]}
             />
 

@@ -33,20 +33,29 @@ const VideoCardsSection = ({ title, bgClass = "bg-white", textClass = "text-dr-d
                         >
                             {/* Video Player or Thumbnail */}
                             <div className="relative w-full aspect-video bg-gray-800 flex items-center justify-center cursor-pointer group">
-                                {playingIndex === index && video.youtubeLink && video.youtubeLink.includes('watch?v=') ? (
-                                    <iframe 
-                                        className="absolute inset-0 w-full h-full"
-                                        src={`https://www.youtube.com/embed/${new URL(video.youtubeLink).searchParams.get('v')}?autoplay=1`} 
-                                        title={video.title} 
-                                        frameBorder="0" 
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                        allowFullScreen
-                                    ></iframe>
+                                {playingIndex === index ? (
+                                    video.youtubeLink && video.youtubeLink.includes('watch?v=') ? (
+                                        <iframe 
+                                            className="absolute inset-0 w-full h-full"
+                                            src={`https://www.youtube.com/embed/${new URL(video.youtubeLink).searchParams.get('v')}?autoplay=1`} 
+                                            title={video.title} 
+                                            frameBorder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                            allowFullScreen
+                                        ></iframe>
+                                    ) : video.youtubeLink && video.youtubeLink.endsWith('.mp4') ? (
+                                        <video 
+                                            className="absolute inset-0 w-full h-full object-cover"
+                                            src={video.youtubeLink}
+                                            autoPlay
+                                            controls
+                                        />
+                                    ) : null
                                 ) : (
                                     <div 
                                         className="absolute inset-0 w-full h-full flex items-center justify-center group"
                                         onClick={() => {
-                                            if (video.youtubeLink && video.youtubeLink.includes('watch?v=')) {
+                                            if (video.youtubeLink && (video.youtubeLink.includes('watch?v=') || video.youtubeLink.endsWith('.mp4'))) {
                                                 setPlayingIndex(index);
                                             } else {
                                                 window.open(video.youtubeLink || "#", "_blank");
@@ -77,12 +86,16 @@ const VideoCardsSection = ({ title, bgClass = "bg-white", textClass = "text-dr-d
                             </div>
                             
                             {/* Card Content placeholder */}
-                            <div className="p-6 bg-white flex-1">
-                                <h3 className="font-lato font-bold text-xl text-gray-800 mb-2">{video.title}</h3>
-                                <p className="text-gray-600 font-lato text-sm line-clamp-2">
-                                    {video.description}
-                                </p>
-                            </div>
+                            {(video.title || video.description) && (
+                                <div className="p-6 bg-white flex-1">
+                                    {video.title && <h3 className="font-lato font-bold text-xl text-dr-text-dark mb-2">{video.title}</h3>}
+                                    {video.description && (
+                                        <p className="text-dr-text-dark font-lato text-sm line-clamp-2">
+                                            {video.description}
+                                        </p>
+                                    )}
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>

@@ -8,11 +8,13 @@ import JourneySections from './components/JourneySections';
 import DigitalCard from './components/DigitalCard';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import SplashScreen from './components/SplashScreen';
 
 function App() {
   return (
     <Router>
       <div className="font-lato antialiased bg-slate-50 text-dr-text-dark scroll-smooth">
+        <SplashScreen />
         <ScrollToTop />
         <Navbar />
         <main>

@@ -76,7 +76,7 @@ const Glamour = () => {
                                 style={{ minHeight: '280px' }}
                             />
                             <div className="absolute bottom-4 left-4 bg-dr-accent text-white font-lato font-bold px-4 py-2 text-sm md:text-base uppercase tracking-wider z-10">
-                                Print Media News Coverage
+                                Media Coverage
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-import { FaLinkedinIn, FaInstagram, FaXTwitter, FaEnvelope, FaLocationDot } from 'react-icons/fa6';
+import { FaLinkedinIn, FaInstagram, FaXTwitter, FaYoutube, FaEnvelope, FaLocationDot } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -10,15 +10,16 @@ const Footer = () => {
 
                 {/* Column 1: Brand Info */}
                 <div className="space-y-4">
-                    <h3 className="text-2xl font-bold text-white mb-4">Dr Aperna <span className="text-dr-accent font-light">Volluru</span></h3>
+                    <h3 className="text-2xl font-bold text-white mb-4">Dr. Aperna <span className="text-dr-accent font-light">Volluru</span></h3>
                     <p className="text-sm leading-relaxed text-gray-400">
                         Pioneering the future of Early Childhood Education through neuroscience, innovation, and unwavering compassion.
                     </p>
                     <div className="flex space-x-4 pt-2">
                         {/* Social Icons */}
                         <SocialIcon icon={<FaLinkedinIn />} href="https://www.linkedin.com/in/myschoolitaly/" label="LinkedIn" />
-                        <SocialIcon icon={<FaXTwitter />} href="https://twitter.com/draperna" label="Twitter" />
-                        <SocialIcon icon={<FaInstagram />} href="https://dummy-link.com" label="Instagram" />
+                        {/* <SocialIcon icon={<FaXTwitter />} href="https://twitter.com/draperna" label="Twitter" /> */}
+                        <SocialIcon icon={<FaInstagram />} href="https://www.instagram.com/neuropi.ai?igsh=dzYyZHRmYWwwOW5k" label="Instagram" />
+                        <SocialIcon icon={<FaYoutube />} href="https://youtube.com/@neuropi?feature=shared" label="YouTube" />
                     </div>
                 </div>
 
@@ -49,11 +50,11 @@ const Footer = () => {
                     <ul className="space-y-3 text-sm">
                         <li className="flex items-start gap-3">
                             <span className="text-dr-accent mt-1"><FaEnvelope /></span>
-                            <span>contact@draparna.com</span>
+                            <a href="mailto:aperna@neuropi.ai" className="hover:text-dr-accent transition-colors">aperna@neuropi.ai</a>
                         </li>
                         <li className="flex items-start gap-3">
                             <span className="text-dr-accent mt-1"><FaLocationDot /></span>
-                            <span>London, UK / Hyderabad, India</span>
+                            <span>Bari, Italy / Hyderabad, India</span>
                         </li>
                     </ul>
                 </div>
@@ -61,7 +62,7 @@ const Footer = () => {
 
             {/* Bottom Bar */}
             <div className="border-t border-white/10 pt-8 text-center text-xs text-gray-500">
-                <p>&copy; 2015 Dr Aperna Volluru. All rights reserved.</p>
+                <p>&copy; 2015 Dr. Aperna Volluru. All rights reserved.</p>
             </div>
         </footer>
     );

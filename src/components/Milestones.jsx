@@ -39,7 +39,7 @@ const MilestoneItem = ({ year, title, subtitle, content }) => {
                     <h3 className="text-3xl font-lato text-dr-text-dark">{title}</h3>
                     <div className="w-12 h-0.5 bg-dr-light-purple mx-auto"></div>
                     <div
-                        className="text-gray-600 font-lato leading-relaxed text-base md:text-lg"
+                        className="text-dr-text-dark font-lato leading-relaxed text-base md:text-lg"
                         dangerouslySetInnerHTML={{ __html: content }}
                     />
                 </div>

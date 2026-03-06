@@ -14,7 +14,7 @@ export default {
         'dr-text-dark': '#1A4255',
       },
       fontFamily: {
-        lato: ['Lato', 'sans-serif'],
+        lato: ['Lato'],
       },
     },
   },

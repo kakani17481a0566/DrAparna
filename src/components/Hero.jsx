@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import apernaImg from "../assets/Aperna.png";
+import bgImage from "../assets/Aperna.png";
 
 const Hero = () => {
   const heroRef = useRef(null);
@@ -45,7 +45,7 @@ const Hero = () => {
             The Visionary
           </h1>
 
-          <p className="font-lato italic text-2xl text-gray-600 mb-8 max-w-xl">
+          <p className="font-lato italic text-2xl text-dr-accent mb-8 max-w-xl">
             “Bridging the gap between scientific discovery and human compassion.”
           </p>
 
@@ -63,9 +63,9 @@ const Hero = () => {
           <div className="absolute bottom-10 w-[320px] h-[60px] bg-black/20 blur-3xl rounded-full"></div>
 
           <img
-            src={apernaImg}
-            alt="Dr Aperna Volluru"
-            title="Dr Aperna Volluru - Visionary Entrepreneur & Educationist"
+            src={bgImage}
+            alt="Dr. Aperna Volluru"
+            title="Dr. Aperna Volluru - Visionary Entrepreneur & Educationist"
             className="relative w-[360px] md:w-[520px] object-contain
             drop-shadow-[0_40px_60px_rgba(0,0,0,0.25)]
             md:-mb-32 transition-transform duration-700 hover:scale-[1.03]"

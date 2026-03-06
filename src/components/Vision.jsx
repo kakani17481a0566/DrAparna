@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
-import visionImage from '../assets/vision_image.png';
-import missionImage from '../assets/mission_image.png';
+import visionImage from '../assets/no_more_illiteracy_2.jpg';
+import missionImage from '../assets/our_mission.jpg';
 
 const Vision = () => {
     const sectionRef = useRef(null);
@@ -39,7 +39,7 @@ const Vision = () => {
 
                         <div className="w-16 h-1 bg-dr-accent mx-auto md:mx-0 mb-8"></div>
 
-                        <p className="font-lato text-xl leading-relaxed text-gray-600 italic mb-6">
+                        <p className="font-lato text-xl leading-relaxed text-dr-accent italic mb-6">
                             "Bringing excellence to the grassroots."
                         </p>
 
@@ -57,7 +57,7 @@ const Vision = () => {
                             <img
                                 src={missionImage}
                                 alt="Mission in Action"
-                                title="Dr Aperna Volluru's Mission in Action: My School ITALY and Neuropi"
+                                title="Dr. Aperna Volluru's Mission in Action: My School ITALY and Neuropi"
                                 className="w-full h-full object-cover"
                             />
                         </div>
@@ -76,7 +76,7 @@ const Vision = () => {
 
                         <div className="w-16 h-1 bg-dr-accent mx-auto md:mx-0 mb-8"></div>
 
-                        <p className="font-lato text-xl leading-relaxed text-gray-600 italic mb-6">
+                        <p className="font-lato text-xl leading-relaxed text-dr-accent italic mb-6">
                             "Empowering the next generation starts with understanding the mind."
                         </p>
 
@@ -94,7 +94,7 @@ const Vision = () => {
                             <img
                                 src={visionImage}
                                 alt="Vision for Tomorrow"
-                                title="Dr Aperna Volluru's Vision for Tomorrow in Early Education"
+                                title="Dr. Aperna Volluru's Vision for Tomorrow in Early Education"
                                 className="w-full h-full object-cover"
                             />
                         </div>

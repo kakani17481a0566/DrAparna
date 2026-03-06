@@ -7,7 +7,7 @@ const DigitalCard = () => {
             <div className="w-full max-w-2xl h-auto shadow-2xl rounded-xl overflow-hidden border border-gray-100 transform transition-transform duration-300 hover:scale-[1.01]">
                 <img
                     src="/digital-card_page-0001.jpg"
-                    alt="Dr Aperna Volluru Digital Card"
+                    alt="Dr. Aperna Volluru Digital Card"
                     className="w-full h-auto object-contain block"
                 />
             </div>

@@ -30,7 +30,7 @@ const JourneyTextSection = ({ title, bgImage, children }) => {
                 </div>
 
                 {/* Content Body */}
-                <div className={`font-lato text-lg md:text-xl leading-relaxed space-y-6 text-justify ${bgImage ? 'text-gray-100' : 'text-gray-700'}`}>
+                <div className={`font-lato text-lg md:text-xl leading-relaxed space-y-6 text-justify ${bgImage ? 'text-gray-100' : 'text-dr-text-dark'}`}>
                     {children}
                 </div>
 

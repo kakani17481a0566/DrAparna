@@ -1,6 +1,6 @@
 export const milestones = [
     {
-        year: "1997",
+        year: "1994",
         title: "UK Queen's Award",
         subtitle: "First Milestone",
         content: `Awarded the prestigious <strong>UK Queen's Award for Excellence in Studies</strong> — the only non-British recipient in the last 27 years of Britain's educational history.`

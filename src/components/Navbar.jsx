@@ -57,9 +57,9 @@ const Navbar = () => {
                                 className="flex flex-col items-center group"
                             >
                                 <span className="font-lato text-3xl font-bold text-dr-dark-purple tracking-wide group-hover:text-dr-accent transition-colors duration-300">
-                                    Dr Aperna
+                                    Dr. Aperna
                                 </span>
-                                <span className="font-lato text-xs tracking-[0.2em] text-dr-text-dark uppercase mt-1">
+                                <span className="font-lato text-xs tracking-[0.2em] text-dr-accent uppercase mt-1 transition-colors duration-300 group-hover:text-[#009eb5]">
                                     Volluru
                                 </span>
                             </Link>
@@ -87,7 +87,7 @@ const Navbar = () => {
                             }}
                         >
                             <span className="font-lato text-2xl font-bold text-dr-dark-purple tracking-wide">
-                                Dr Aperna
+                                Dr. Aperna
                             </span>
                         </Link>
 
