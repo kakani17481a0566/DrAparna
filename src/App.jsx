@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Glamour from './components/Glamour';
 import Vision from './components/Vision';
 import Milestones from './components/Milestones';
 import DigitalCard from './components/DigitalCard';
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={
               <>
                 <Hero />
+                <Glamour />
                 <Vision />
                 <Milestones />
               </>
