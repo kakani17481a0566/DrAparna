@@ -12,7 +12,7 @@ import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
     <Router>
-      <div className="font-sans antialiased bg-slate-50 text-dr-text-dark scroll-smooth">
+      <div className="font-lato antialiased bg-slate-50 text-dr-text-dark scroll-smooth">
         <ScrollToTop />
         <Navbar />
         <main>

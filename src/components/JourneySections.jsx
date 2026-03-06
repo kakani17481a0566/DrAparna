@@ -76,7 +76,7 @@ const JourneySections = () => {
 
             {/* Student Section */}
             <JourneyTextSection title="A STUDENT" bgImage="/image/Bg/student_bg.png">
-                <p className="font-bold font-serif text-2xl italic mb-4">
+                <p className="font-bold font-lato text-2xl italic mb-4">
                     My Dad made me in a hot furnace and the grit cultivated by my Grandma never let me give up.
                 </p>
                 <p>
@@ -98,7 +98,7 @@ const JourneySections = () => {
 
             {/* Researcher Section */}
             <JourneyTextSection title="A RESEARCHER">
-                <p className="font-bold font-serif text-2xl italic mb-4 text-dr-accent">
+                <p className="font-bold font-lato text-2xl italic mb-4 text-dr-accent">
                     “Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world,” said Albert Einstein.
                 </p>
                 <p>
@@ -112,7 +112,7 @@ const JourneySections = () => {
                 </p>
 
                 <div className="mt-8">
-                    <h3 className="font-serif font-bold text-xl text-dr-dark-purple mb-4">Some of my Professional Affiliations:</h3>
+                    <h3 className="font-lato font-bold text-xl text-dr-dark-purple mb-4">Some of my Professional Affiliations:</h3>
                     <ul className="list-disc pl-5 space-y-2 text-base text-gray-700">
                         <li>Member of the Society of Italian Anglistica (AIA)</li>
                         <li>Member of the European Society for the Study of English (THEY)</li>
@@ -122,7 +122,7 @@ const JourneySections = () => {
                 </div>
 
                 <div className="mt-8">
-                    <h3 className="font-serif font-bold text-xl text-dr-dark-purple mb-4">Some of my Publications</h3>
+                    <h3 className="font-lato font-bold text-xl text-dr-dark-purple mb-4">Some of my Publications</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-gray-700">
                         <li>Dr Aperna RV and Dr Lipson H "Evolving process of speech in Children’s Language Development" (2013), Journal of Educational Measurement.</li>
                         <li>Dr Aperna RV and Dr W. Acquino "Insights to the Language Development in Children 0-2 years" (2012), Journal of Educational Measurement.</li>
@@ -142,7 +142,7 @@ const JourneySections = () => {
 
             {/* Psychologist Section */}
             <JourneyTextSection title="A PSYCHOLOGIST">
-                <p className="font-bold font-serif text-2xl italic mb-4 text-dr-accent">
+                <p className="font-bold font-lato text-2xl italic mb-4 text-dr-accent">
                     You know too much psychology. When you can’t get mad because you understand everyone’s reasons for doing everything.
                 </p>
                 <p>
@@ -265,11 +265,11 @@ const JourneySections = () => {
             <section className="py-24 px-6 bg-slate-50">
                 <div className="container mx-auto max-w-7xl">
                     <div className="mb-12 animate-fade-up text-center">
-                        <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4 text-dr-dark-purple uppercase">
+                        <h2 className="font-lato text-4xl md:text-5xl font-bold mb-4 text-dr-dark-purple uppercase">
                             ON GOING PROJECTS
                         </h2>
                         <div className="w-24 h-1 bg-dr-accent mx-auto rounded-full mb-6"></div>
-                        <p className="font-bold font-serif text-2xl italic text-dr-accent">
+                        <p className="font-bold font-lato text-2xl italic text-dr-accent">
                             "Either you run the day or the day runs you."
                         </p>
                     </div>
@@ -278,26 +278,26 @@ const JourneySections = () => {
                         {/* Left Side: Projects Text */}
                         <div className="lg:w-1/2 space-y-10 animate-fade-up">
                             <div>
-                                <h3 className="text-xl font-bold font-sans text-dr-dark-purple mb-3 uppercase tracking-wide">
+                                <h3 className="text-xl font-bold font-lato text-dr-dark-purple mb-3 uppercase tracking-wide">
                                     Entrepreneur Training and Development
                                 </h3>
-                                <p className="text-gray-700 leading-relaxed font-sans">
+                                <p className="text-gray-700 leading-relaxed font-lato">
                                     EMPOWERING PEOPLE & REVITALISING THE COMMUNITY. EDTP created as a powerful engine for encouraging entrepreneurship in economically disadvantaged communities has shown to be the equaliser that allows individuals from variant educational, socio-economic and familial backgrounds to prosper financially.
                                 </p>
                             </div>
                             <div>
-                                <h3 className="text-xl font-bold font-sans text-dr-dark-purple mb-3 uppercase tracking-wide">
+                                <h3 className="text-xl font-bold font-lato text-dr-dark-purple mb-3 uppercase tracking-wide">
                                     Summer Camps
                                 </h3>
-                                <p className="text-gray-700 leading-relaxed font-sans">
+                                <p className="text-gray-700 leading-relaxed font-lato">
                                     STUDENTS GET STRONGER, BRAVER AND CONFIDENT.The Summer Camps that I organise through Ritzy Schools Educational Society introduce the students to Italian geography, language, culture, traditions, art, music, films, food, fun games apart from Aerial Art and Indo-Italian Folk Fitness.
                                 </p>
                             </div>
                             <div>
-                                <h3 className="text-xl font-bold font-sans text-dr-dark-purple mb-3 uppercase tracking-wide">
+                                <h3 className="text-xl font-bold font-lato text-dr-dark-purple mb-3 uppercase tracking-wide">
                                     Teacher Training and Women Empowerment
                                 </h3>
-                                <p className="text-gray-700 leading-relaxed font-sans">
+                                <p className="text-gray-700 leading-relaxed font-lato">
                                     EARLY CHILDHOOD EDUCATION AND CARE (ECEC) FACILITIES and JOB OPPORTUNITIES FOR ALL. Striving to give education to children living in most remote parts of the Globe, geographically inaccessible terrains and to generate employment and bread earning opportunities for women and youth.
                                 </p>
                             </div>

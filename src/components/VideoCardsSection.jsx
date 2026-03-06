@@ -13,7 +13,7 @@ const VideoCardsSection = ({ title, bgClass = "bg-white", textClass = "text-dr-d
                 {/* Heading Section */}
                 {title && (
                     <div className="text-center mb-12 animate-fade-up">
-                        <h2 className={`font-serif text-4xl md:text-5xl font-bold mb-4 ${textClass}`}>
+                        <h2 className={`font-lato text-4xl md:text-5xl font-bold mb-4 ${textClass}`}>
                             {title}
                         </h2>
                         <div className="w-16 h-1 bg-dr-accent mx-auto rounded-full"></div>
@@ -78,8 +78,8 @@ const VideoCardsSection = ({ title, bgClass = "bg-white", textClass = "text-dr-d
                             
                             {/* Card Content placeholder */}
                             <div className="p-6 bg-white flex-1">
-                                <h3 className="font-sans font-bold text-xl text-gray-800 mb-2">{video.title}</h3>
-                                <p className="text-gray-600 font-sans text-sm line-clamp-2">
+                                <h3 className="font-lato font-bold text-xl text-gray-800 mb-2">{video.title}</h3>
+                                <p className="text-gray-600 font-lato text-sm line-clamp-2">
                                     {video.description}
                                 </p>
                             </div>
