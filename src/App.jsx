@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Glamour from './components/Glamour';
 import Vision from './components/Vision';
 import Milestones from './components/Milestones';
+import JourneySections from './components/JourneySections';
 import DigitalCard from './components/DigitalCard';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -22,6 +23,7 @@ function App() {
                 <Glamour />
                 <Vision />
                 <Milestones />
+                <JourneySections />
               </>
             } />
             <Route path="/vision" element={<Vision />} />

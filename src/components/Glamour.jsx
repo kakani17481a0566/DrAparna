@@ -9,10 +9,10 @@ const Glamour = () => {
             <div className="container mx-auto max-w-[1400px]">
                 {/* Heading Section */}
                 <div className="text-center mb-16">
-                    <h2 className="font-serif text-5xl md:text-6xl text-[#7e5792] font-bold mb-6">
+                    <h2 className="font-serif text-5xl md:text-6xl text-dr-dark-purple font-bold mb-6">
                         Glamour with Grit
                     </h2>
-                    <p className="font-serif text-lg md:text-xl text-[#d28daf] font-semibold max-w-3xl mx-auto">
+                    <p className="font-serif text-lg md:text-xl text-dr-accent font-semibold max-w-3xl mx-auto">
                         Controlling our emotional intelligence gets us ahead in our journey as Womenpreneurs.
                     </p>
                 </div>
@@ -29,7 +29,7 @@ const Glamour = () => {
                                 className="w-full h-full object-cover rounded-sm transition-transform duration-500 group-hover:scale-105 bg-gray-100"
                                 style={{ minHeight: '600px' }}
                             />
-                            <div className="absolute bottom-4 left-4 bg-[#d28daf] text-white font-sans font-bold px-4 py-2 text-sm md:text-base uppercase tracking-wider z-10">
+                            <div className="absolute bottom-4 left-4 bg-dr-accent text-white font-sans font-bold px-4 py-2 text-sm md:text-base uppercase tracking-wider z-10">
                                 National Winner of ITALY
                             </div>
                         </div>
@@ -48,7 +48,7 @@ const Glamour = () => {
                                     className="w-full h-full object-cover rounded-sm transition-transform duration-500 group-hover:scale-105 bg-gray-100"
                                     style={{ minHeight: '280px' }}
                                 />
-                                <div className="absolute bottom-4 left-4 bg-[#d28daf] text-white font-sans font-bold px-3 py-1.5 text-xs md:text-sm uppercase tracking-wider z-10">
+                                <div className="absolute bottom-4 left-4 bg-dr-accent text-white font-sans font-bold px-3 py-1.5 text-xs md:text-sm uppercase tracking-wider z-10">
                                     With Tribals
                                 </div>
                             </div>
@@ -61,7 +61,7 @@ const Glamour = () => {
                                     className="w-full h-full object-cover rounded-sm transition-transform duration-500 group-hover:scale-105 bg-gray-100"
                                     style={{ minHeight: '280px' }}
                                 />
-                                <div className="absolute bottom-4 left-4 bg-[#d28daf] text-white font-sans font-bold px-3 py-1.5 text-xs md:text-sm uppercase tracking-wider z-10">
+                                <div className="absolute bottom-4 left-4 bg-dr-accent text-white font-sans font-bold px-3 py-1.5 text-xs md:text-sm uppercase tracking-wider z-10">
                                     Women Empowerment Project
                                 </div>
                             </div>
@@ -75,7 +75,7 @@ const Glamour = () => {
                                 className="w-full h-full object-cover rounded-sm transition-transform duration-500 group-hover:scale-105 bg-gray-100"
                                 style={{ minHeight: '280px' }}
                             />
-                            <div className="absolute bottom-4 left-4 bg-[#d28daf] text-white font-sans font-bold px-4 py-2 text-sm md:text-base uppercase tracking-wider z-10">
+                            <div className="absolute bottom-4 left-4 bg-dr-accent text-white font-sans font-bold px-4 py-2 text-sm md:text-base uppercase tracking-wider z-10">
                                 Print Media News Coverage
                             </div>
                         </div>
