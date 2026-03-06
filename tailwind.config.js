@@ -14,8 +14,8 @@ export default {
         'dr-text-dark': '#1A4255',
       },
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-        serif: ['"Playfair Display"', 'serif'],
+        sans: ['Lato', 'sans-serif'],
+        serif: ['Lato', 'sans-serif'],
       },
     },
   },
