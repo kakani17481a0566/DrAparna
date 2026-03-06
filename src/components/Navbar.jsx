@@ -46,7 +46,7 @@ const Navbar = () => {
                         {/* Left Links */}
                         <div className="flex-1 flex justify-start space-x-8">
                             <NavLink to="/" label="Home" active={isActive('/')} />
-                            <NavLink to="/vision" label="Vision" active={isActive('/vision')} />
+                            <NavLink to="/milestones" label="Milestones" active={isActive('/milestones')} />
                         </div>
 
                         {/* Center Logo */}
@@ -67,7 +67,7 @@ const Navbar = () => {
 
                         {/* Right Links */}
                         <div className="flex-1 flex justify-end space-x-8 items-center">
-                            <NavLink to="/milestones" label="Milestones" active={isActive('/milestones')} />
+                         
                             <Link
                                 to="/digital-card"
                                 className="font-sans text-sm font-medium text-dr-text-dark hover:text-dr-accent transition-colors duration-300 border border-dr-dark-purple/20 px-4 py-2 rounded-full hover:border-dr-accent"
