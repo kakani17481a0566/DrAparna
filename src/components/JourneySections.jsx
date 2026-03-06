@@ -7,56 +7,67 @@ const JourneySections = () => {
     return (
         <div className="flex flex-col w-full">
             {/* European Business Award */}
-            <VideoCardsSection 
-                title="EUROPEAN BUSINESS AWARD" 
-                bgClass="bg-white" 
-                count={2} 
+            <VideoCardsSection
+                title="EUROPEAN BUSINESS AWARD"
+                bgClass="bg-white"
+                videos={[
+                    {
+                        title: "European Business Award - 1",
+                        description: "Dr. Aparna's remarkable journey and recognition at the European Business Awards.",
+                        youtubeLink: "https://www.youtube.com/watch?v=XySHccUU2NY"
+                    },
+                    {
+                        title: "European Business Award - 2",
+                        description: "Dr. Aparna's remarkable journey and recognition at the European Business Awards.",
+                        youtubeLink: "https://www.youtube.com/watch?v=BdyDktqjdpY"
+                    }
+                ]}
             />
 
             {/* Engage Carousel */}
-            <ImageCarouselSection 
-                title="ENGAGE, ENLIGHTEN, ENCOURAGE AND ESPECIALLY...BE YOURSELF!" 
+            <ImageCarouselSection
+                title="ENGAGE, ENLIGHTEN, ENCOURAGE AND ESPECIALLY...BE YOURSELF!"
                 imageBasePath="/image/ENGAGE, ENLIGHTEN, ENCOURAGE AND ESPECIALLY...BE YOURSELF!"
                 images={[
-    'slide_01.jpg',
-    'slide_02.jpg',
-    'slide_07.jpg',
-    'slide_10.jpg',
-    'IMG_20191204_234301.jpg',
-    'S20.jpg',
-    'S22.jpg',
-    'S23.jpg',
-    'S24.jpg',
-    'S25.jpg',
-    'S26.jpg',
-    'S27.jpg'
-]}
+                    'slide_01.jpg',
+                    'slide_02.jpg',
+                    'slide_07.jpg',
+                    'slide_10.jpg',
+                    'IMG_20191204_234301.jpg',
+                    'S20.jpg',
+                    'S22.jpg',
+                    'S23.jpg',
+                    'S24.jpg',
+                    'S25.jpg',
+                    'S26.jpg',
+                    'S27.jpg'
+                ]}
             />
 
             {/* Own Woman */}
-            <VideoCardsSection 
-                title="I'M MY OWN WOMAN" 
-                bgClass="bg-slate-50" 
-                count={2} 
+            <VideoCardsSection
+                title="I'M MY OWN WOMAN"
+                bgClass="bg-slate-50"
+                count={2}
             />
 
             {/* Photographs Carousel */}
-            <ImageCarouselSection 
-                title="Freezing a Moment" 
+            <ImageCarouselSection
+                title="Freezing a Moment"
                 subtitle='"When words become unclear, I shall focus with Photographs."'
                 imageBasePath="/image/When words become unclear, I shall focus with Photographs"
                 images={[
-    'slide_05.jpg',
-    'slide_07.jpg',
-    'slide_08.jpg',
-    'slide_09.jpg',
-    'S8.jpg',
-    'S10.jpg',
-    'S11.jpg',
-    'S12.jpg',
-    'S13.jpg',
-    'S14.jpg'
-]}
+                    'slide_05.jpg',
+                    'slide_07.jpg',
+                    'slide_08.jpg',
+                    'slide_09.jpg',
+                    'S8.jpg',
+                    'S10.jpg',
+                    'S11.jpg',
+                    'S12.jpg',
+                    'S13.jpg',
+                    'S14.jpg'
+                ]}
             />
 
             {/* Student Section */}
@@ -95,7 +106,7 @@ const JourneySections = () => {
                 <p>
                     In 2014, when the American University in Washington D.C. accepted my papers to introduce Neuro Linguistic Programming (NLP) in ECEC sector and My School ITALY became the FIRST Preschool in the WORLD to introduce NLP in its teaching methodology. Both My School ITALY and RITZY SCHOOLS have very high European standards of running and managing the Preschools. Hence, our Franchisees and our teaching staff are trained for 250 hours. The RITZY GROUP staff are available 24/7 for the teaching staff and to the management of Franchised Schools via their Back Office to help them and resolve any rising queries or issues.
                 </p>
-                
+
                 <div className="mt-8">
                     <h3 className="font-serif font-bold text-xl text-dr-dark-purple mb-4">Some of my Professional Affiliations:</h3>
                     <ul className="list-disc pl-5 space-y-2 text-base text-gray-700">
@@ -142,33 +153,33 @@ const JourneySections = () => {
             </JourneyTextSection>
 
             {/* Brain Wider */}
-            <VideoCardsSection 
-                title="BRAIN IS WIDER THAN THE SKY" 
-                bgClass="bg-slate-50" 
+            <VideoCardsSection
+                title="BRAIN IS WIDER THAN THE SKY"
+                bgClass="bg-slate-50"
                 textClass="text-dr-dark-purple"
-                count={2} 
+                count={2}
             />
 
             {/* Inception Carousel */}
-            <ImageCarouselSection 
-                title="THE INCEPTION" 
+            <ImageCarouselSection
+                title="THE INCEPTION"
                 imageBasePath="/image/THE INCEPTION"
                 images={[
-    'slide_07.jpg',
-    'slide_06.jpg',
-    'slide_05.jpg',
-    'slide_04.jpg',
-    'slide_03.jpg',
-    'slide_02.jpg',
-    'slide_01.jpg',
-    'S39.jpg',
-    'S40.jpg',
-    'S41.jpg',
-    'S42.jpg',
-    'S43.jpg',
-    'S44.jpg',
-    'S45.jpg'
-]}
+                    'slide_07.jpg',
+                    'slide_06.jpg',
+                    'slide_05.jpg',
+                    'slide_04.jpg',
+                    'slide_03.jpg',
+                    'slide_02.jpg',
+                    'slide_01.jpg',
+                    'S39.jpg',
+                    'S40.jpg',
+                    'S41.jpg',
+                    'S42.jpg',
+                    'S43.jpg',
+                    'S44.jpg',
+                    'S45.jpg'
+                ]}
             />
 
             {/* Entrepreneur Section */}
@@ -201,31 +212,31 @@ const JourneySections = () => {
             </JourneyTextSection>
 
             {/* Results Beyond Calculation 1 */}
-            <ImageCarouselSection 
-                title="THE RESULTS WILL BE BEYOND CALCULATION" 
+            <ImageCarouselSection
+                title="THE RESULTS WILL BE BEYOND CALCULATION"
                 imageBasePath="/image/THE RESULTS WILL BE BEYOND CALCULATION"
                 images={[
-                    'slide_01.jpg', 'slide_02.jpg', 'slide_03.jpg', 'slide_04.jpg', 'slide_05.jpg', 'slide_06.jpg', 'slide_07.jpg', 'slide_08.jpg'
+                   'slide_02.jpg', 'slide_03.jpg', 'slide_04.jpg', 'slide_05.jpg', 'slide_06.jpg', 'slide_07.jpg', 'slide_08.jpg'
                 ]}
             />
 
             {/* Media Press */}
-            <VideoCardsSection 
-                title="MEDIA & PRESS COVERAGE" 
-                bgClass="bg-slate-50" 
-                count={2} 
+            <VideoCardsSection
+                title="MEDIA & PRESS COVERAGE"
+                bgClass="bg-slate-50"
+                count={2}
             />
 
             {/* Best of Opinion */}
-            <VideoCardsSection 
-                title="HAVE BEST OF THE OPINION" 
-                bgClass="bg-white" 
-                count={4} 
+            <VideoCardsSection
+                title="HAVE BEST OF THE OPINION"
+                bgClass="bg-white"
+                count={4}
             />
 
             {/* Results Beyond Calculation 2 */}
-            <ImageCarouselSection 
-                title="THE RESULTS WILL BE BEYOND CALCULATION" 
+            <ImageCarouselSection
+                title="THE RESULTS WILL BE BEYOND CALCULATION"
                 imageBasePath="/image/THE RESULTS WILL BE BEYOND CALCULATION 2"
                 images={[
                     'slide_01.jpg', 'slide_06.jpg', 'slide_05.jpg', 'slide_03.jpg', 'slide_02.jpg', 'slide_04.jpg'
@@ -279,10 +290,10 @@ const JourneySections = () => {
                             <div className="flex overflow-x-auto gap-4 snap-x snap-mandatory scrollbar-hide py-4" style={{ scrollbarWidth: 'none' }}>
                                 {['slide_03.jpg', 'slide_02.jpg', 'slide_01.jpg'].map((img, idx) => (
                                     <div key={idx} className="snap-center shrink-0 w-[85%] md:w-[70%] lg:w-[90%] aspect-[4/3] rounded-xl overflow-hidden shadow-lg border border-gray-100">
-                                        <img 
-                                            src={`/image/ON GOING PROJECTS/${img}`} 
-                                            alt={`Project slide ${idx + 1}`} 
-                                            className="w-full h-full object-cover" 
+                                        <img
+                                            src={`/image/ON GOING PROJECTS/${img}`}
+                                            alt={`Project slide ${idx + 1}`}
+                                            className="w-full h-full object-cover"
                                         />
                                     </div>
                                 ))}
@@ -293,10 +304,10 @@ const JourneySections = () => {
             </section>
 
             {/* Action Is On */}
-            <VideoCardsSection 
-                title="THE ACTION IS ON!" 
-                bgClass="bg-white" 
-                count={2} 
+            <VideoCardsSection
+                title="THE ACTION IS ON!"
+                bgClass="bg-white"
+                count={2}
             />
 
         </div>
