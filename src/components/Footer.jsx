@@ -36,7 +36,7 @@ const Footer = () => {
 
                 {/* Column 3: Legal */}
                 <div>
-                    <h4 className="text-white font-semibold mb-6">Legal</h4>
+                    <h4 className="text-white font-semibold mb-6">Blog</h4>
                     <ul className="space-y-3 text-sm">
                         <li><a href="https://dummy-link.com" className="hover:text-dr-accent transition-colors">Privacy Policy</a></li>
                         <li><a href="https://dummy-link.com" className="hover:text-dr-accent transition-colors">Terms of Service</a></li>
@@ -61,7 +61,7 @@ const Footer = () => {
             </div>
 
             {/* Bottom Bar */}
-            <div className="border-t border-white/10 pt-8 text-center text-xs text-gray-500">
+            <div className="border-t border-white/10 pt-8 text-center text-xs text-dr-accent">
                 <p>&copy; 2015 Dr. Aperna Volluru. All rights reserved.</p>
             </div>
         </footer>

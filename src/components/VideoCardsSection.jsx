@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const VideoCardsSection = ({ title, bgClass = "bg-white", textClass = "text-dr-dark-purple", count = 2, videos = [] }) => {
+const VideoCardsSection = ({ title, subtitle, bgClass = "bg-white", textClass = "text-dr-dark-purple", count = 2, videos = [] }) => {
     // Generate an array of placeholder cards based on count
     const cards = Array.from({ length: count });
     
@@ -11,12 +11,19 @@ const VideoCardsSection = ({ title, bgClass = "bg-white", textClass = "text-dr-d
         <section className={`py-16 px-6 ${bgClass}`}>
             <div className="container mx-auto max-w-[1400px]">
                 {/* Heading Section */}
-                {title && (
+                {(title || subtitle) && (
                     <div className="text-center mb-12 animate-fade-up">
-                        <h2 className={`font-woodford text-4xl md:text-5xl  mb-4 ${textClass}`}>
-                            {title}
-                        </h2>
-                        <div className="w-16 h-1 bg-dr-accent mx-auto rounded-full"></div>
+                        {title && (
+                            <h2 className={`font-woodford text-4xl md:text-5xl  mb-4 ${textClass}`}>
+                                {title}
+                            </h2>
+                        )}
+                        <div className={`w-16 h-1 bg-dr-accent mx-auto rounded-full ${subtitle ? 'mb-6' : ''}`}></div>
+                        {subtitle && (
+                            <p className="font-woodford text-2xl md:text-3xl italic text-dr-accent  max-w-4xl mx-auto">
+                                {subtitle}
+                            </p>
+                        )}
                     </div>
                 )}
 

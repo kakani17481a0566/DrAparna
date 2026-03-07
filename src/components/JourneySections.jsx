@@ -241,8 +241,8 @@ const JourneySections = () => {
                         youtubeLink: "https://www.youtube.com/watch?v=OBkq7yOkkEA"
                     },
                     {
-                        title: "Dr Aperna with Mukha MuKhi",
-                        youtubeLink: "https://www.youtube.com/watch?v=iSjGV-kIm2o"
+                        title: "Entrepreneur Development & Training Program",
+                        youtubeLink: "https://www.youtube.com/watch?v=OFyH1K4CMVI"
                     }
                 ]}
             />
@@ -335,14 +335,15 @@ const JourneySections = () => {
 
             {/* Best of Opinion */}
             <VideoCardsSection
-                title="HAVE BEST OF THE OPINION"
+                title="Dr. Watson & Peppo Discover the Amazing Brain"
+                subtitle="Quiet Strength. Endless Resilience. Boundless Grace."
                 bgClass="bg-white"
                 count={4}
                 videos={[
-                    { title: "Dummy Video Title 1", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" },
-                    { title: "Dummy Video Title 2", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" },
-                    { title: "Dummy Video Title 3", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" },
-                    { title: "Dummy Video Title 4", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" }
+                    { title: "NeuroPi Logo, Mascot & Character Launch", youtubeLink: "https://www.youtube.com/watch?v=vcRkoX52zlY&feature=youtu.be" },
+                    { title: "भारत का भविष्य आज से शुरू होता है - NeuroPi", youtubeLink: "https://www.youtube.com/watch?v=9fOgiMlE3Wo&feature=youtu.be" },
+                    { title: "The Mysterious Lamp",  youtubeLink: "https://www.youtube.com/watch?v=wcmNwUNTNOA&feature=youtu.be" },
+                    { title: "Muscle Builders",  youtubeLink: "https://www.youtube.com/watch?v=B31VL1-tgvY&feature=youtu.be" }
                 ]}
             />
 
@@ -414,8 +415,8 @@ const JourneySections = () => {
                 bgClass="bg-white"
                 count={2}
                 videos={[
-                    { title: "Dummy Video Title 1", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" },
-                    { title: "Dummy Video Title 2", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" }
+                    { title: "NeuroPi Presentation @ Capital HQ", youtubeLink: "https://www.youtube.com/watch?v=5OaJUbJyge0" },
+                    { title: "NeuNeuroPi Lab — Where Innovation Meets Precision", youtubeLink: "https://www.youtube.com/watch?v=7t6D0OGdL0U" }
                 ]}
             />
 
@@ -439,8 +440,8 @@ const JourneySections = () => {
                 bgClass="bg-slate-50"
                 count={2}
                 videos={[
-                    { title: "Dummy Video Title 1", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" },
-                    { title: "Dummy Video Title 2", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" }
+                    { title: "Dr Aperna with Mukha MuKhi", youtubeLink: "https://www.youtube.com/watch?v=iSjGV-kIm2o&feature=youtu.be" },
+                    { title: "Halloween 2019", youtubeLink: "https://www.youtube.com/watch?v=Mo8UprdGz7o&feature=youtu.be" }
                 ]}
             />
 
