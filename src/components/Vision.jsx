@@ -33,17 +33,20 @@ const Vision = () => {
                 <div className="flex flex-col md:flex-row-reverse items-center gap-12 mb-24 reveal-on-scroll opacity-0">
 
                     <div className="md:w-1/2 text-center md:text-left">
-                        <h2 className="font-lato text-4xl md:text-5xl text-dr-dark-purple mb-6">
+
+                        <h2 className="font-woodford text-4xl md:text-5xl text-dr-dark-purple mb-6">
                             Mission in Action
                         </h2>
 
+
+
                         <div className="w-16 h-1 bg-dr-accent mx-auto md:mx-0 mb-8"></div>
 
-                        <p className="font-lato text-xl leading-relaxed text-dr-accent italic mb-6">
+                        <p className="font-woodford text-xl leading-relaxed text-dr-accent italic mb-6">
                             "Bringing excellence to the grassroots."
                         </p>
 
-                        <p className="font-lato text-gray-500 leading-relaxed text-lg text-justify">
+                        <p className="font-woodford text-gray-500 leading-relaxed text-lg text-justify">
                             Through <span className="text-dr-dark-purple font-semibold">Neuropi</span> and
                             <span className="text-dr-dark-purple font-semibold"> My School ITALY</span>,
                             my mission is to bridge the gap between rigorous research and practical
@@ -70,17 +73,17 @@ const Vision = () => {
                 <div className="flex flex-col md:flex-row items-center gap-12 reveal-on-scroll opacity-0">
 
                     <div className="md:w-1/2 text-center md:text-left">
-                        <h2 className="font-lato text-4xl md:text-5xl text-dr-dark-purple mb-6">
+                        <h2 className="font-woodford text-4xl md:text-5xl text-dr-dark-purple mb-6">
                             A Vision for Tomorrow
                         </h2>
 
                         <div className="w-16 h-1 bg-dr-accent mx-auto md:mx-0 mb-8"></div>
 
-                        <p className="font-lato text-xl leading-relaxed text-dr-accent italic mb-6">
+                        <p className="font-woodford text-xl leading-relaxed text-dr-accent italic mb-6">
                             "Empowering the next generation starts with understanding the mind."
                         </p>
 
-                        <p className="font-lato text-gray-500 leading-relaxed text-lg text-justify">
+                        <p className="font-woodford text-gray-500 leading-relaxed text-lg text-justify">
                             My vision is to revolutionize Early Childhood Education and Care (ECEC)
                             in India. By integrating world-class pedagogical frameworks with Indian
                             values, I aim to empower teachers and children alike. It is not just

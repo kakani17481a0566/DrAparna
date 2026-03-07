@@ -21,12 +21,12 @@ const ImageCarouselSection = ({ title, subtitle, images, imageBasePath }) => {
                 {(title || subtitle) && (
                     <div className="text-center mb-12 animate-fade-up">
                         {title && (
-                            <h2 className="font-lato text-3xl md:text-5xl font-bold mb-4 text-dr-dark-purple">
+                            <h2 className="font-woodford text-3xl md:text-5xl  mb-4 text-dr-dark-purple">
                                 {title}
                             </h2>
                         )}
                         {subtitle && (
-                            <p className="font-lato text-lg md:text-xl text-dr-accent font-semibold max-w-4xl mx-auto">
+                            <p className="font-woodford text-lg md:text-xl text-dr-accent font-semibold max-w-4xl mx-auto">
                                 {subtitle}
                             </p>
                         )}

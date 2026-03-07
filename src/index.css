@@ -1,11 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@font-face {
+  font-family: 'Woodford Bourne';
+  src: url('/fonts/WoodfordBournePRO-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Woodford Bourne';
+  src: url('/fonts/WoodfordBournePRO-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Woodford Bourne';
+  src: url('/fonts/WoodfordBournePRO-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Woodford Bourne';
+  src: url('/fonts/WoodfordBournePRO-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Woodford Bourne';
+  src: url('/fonts/WoodfordBournePRO-Thin.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Woodford Bourne';
+  src: url('/fonts/WoodfordBournePRO-ThinItalic.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Woodford Bourne', sans-serif;
   }
 }
 

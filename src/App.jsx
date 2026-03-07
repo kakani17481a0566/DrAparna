@@ -13,7 +13,7 @@ import SplashScreen from './components/SplashScreen';
 function App() {
   return (
     <Router>
-      <div className="font-lato antialiased bg-slate-50 text-dr-text-dark scroll-smooth">
+      <div className="font-woodford antialiased bg-slate-50 text-dr-text-dark scroll-smooth">
         <SplashScreen />
         <ScrollToTop />
         <Navbar />

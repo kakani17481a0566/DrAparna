@@ -30,16 +30,16 @@ const MilestoneItem = ({ year, title, subtitle, content }) => {
             <div className="w-full md:w-2/3 lg:w-1/2 bg-white p-8 md:p-10 rounded-xl shadow-lg border border-dr-light-purple/20 text-center relative hover:-translate-y-1 transition-transform duration-300">
 
                 {/* Year Badge */}
-                <div className="inline-block bg-dr-dark-purple text-white px-6 py-2 font-lato text-xl shadow-md mb-6 rounded-full">
+                <div className="inline-block bg-dr-dark-purple text-white px-6 py-2 font-woodford text-xl shadow-md mb-6 rounded-full">
                     {year}
                 </div>
 
                 <div className="space-y-4">
                     {subtitle && <span className="block text-dr-accent text-sm font-bold uppercase tracking-wider">{subtitle}</span>}
-                    <h3 className="text-3xl font-lato text-dr-text-dark">{title}</h3>
+                    <h3 className="text-3xl font-woodford text-dr-text-dark">{title}</h3>
                     <div className="w-12 h-0.5 bg-dr-light-purple mx-auto"></div>
                     <div
-                        className="text-dr-text-dark font-lato leading-relaxed text-base md:text-lg"
+                        className="text-dr-text-dark font-woodford leading-relaxed text-base md:text-lg"
                         dangerouslySetInnerHTML={{ __html: content }}
                     />
                 </div>
@@ -58,8 +58,8 @@ const Milestones = () => {
 
             <div className="container mx-auto px-4 relative max-w-[1600px]">
                 <div className="text-center mb-20">
-                    <span className="text-dr-accent font-lato uppercase tracking-[0.2em] text-sm font-semibold">The Journey</span>
-                    <h2 className="text-5xl md:text-6xl font-lato text-dr-dark-purple mt-4">Legacy of Impact</h2>
+                    <span className="text-dr-accent font-woodford uppercase tracking-[0.2em] text-sm font-semibold">The Journey</span>
+                    <h2 className="text-5xl md:text-6xl font-woodford text-dr-dark-purple mt-4">Legacy of Impact</h2>
                 </div>
 
                 <div className="relative">
@@ -81,7 +81,7 @@ const Milestones = () => {
 
                     <div className="text-center mt-20 relative z-10">
                         <div className="inline-block p-4 rounded-full border border-dr-dark-purple/20 bg-white shadow-sm">
-                            <span className="font-lato text-2xl text-dr-dark-purple">To Be Continued...</span>
+                            <span className="font-woodford text-2xl text-dr-dark-purple">To Be Continued...</span>
                         </div>
                     </div>
                 </div>

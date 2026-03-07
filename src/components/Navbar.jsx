@@ -56,10 +56,10 @@ const Navbar = () => {
                                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                 className="flex flex-col items-center group"
                             >
-                                <span className="font-lato text-3xl font-bold text-dr-dark-purple tracking-wide group-hover:text-dr-accent transition-colors duration-300">
+                                <span className="font-woodford text-3xl font-bold text-dr-dark-purple tracking-wide group-hover:text-dr-accent transition-colors duration-300">
                                     Dr. Aperna
                                 </span>
-                                <span className="font-lato text-xs tracking-[0.2em] text-dr-accent uppercase mt-1 transition-colors duration-300 group-hover:text-[#009eb5]">
+                                <span className="font-woodford text-xs tracking-[0.2em] text-dr-accent uppercase mt-1 transition-colors duration-300 group-hover:text-[#009eb5]">
                                     Volluru
                                 </span>
                             </Link>
@@ -70,7 +70,7 @@ const Navbar = () => {
                          
                             <Link
                                 to="/digital-card"
-                                className="font-lato text-sm font-medium text-dr-text-dark hover:text-dr-accent transition-colors duration-300 border border-dr-dark-purple/20 px-4 py-2 rounded-full hover:border-dr-accent"
+                                className="font-woodford text-sm font-medium text-dr-text-dark hover:text-dr-accent transition-colors duration-300 border border-dr-dark-purple/20 px-4 py-2 rounded-full hover:border-dr-accent"
                             >
                                 Digital Card
                             </Link>
@@ -86,7 +86,7 @@ const Navbar = () => {
                                 closeMenu();
                             }}
                         >
-                            <span className="font-lato text-2xl font-bold text-dr-dark-purple tracking-wide">
+                            <span className="font-woodford text-2xl font-bold text-dr-dark-purple tracking-wide">
                                 Dr. Aperna
                             </span>
                         </Link>
@@ -148,7 +148,7 @@ const Navbar = () => {
 };
 
 const NavLink = ({ to, label, active }) => (
-    <Link to={to} className={`relative font-lato text-sm font-medium transition-colors duration-300 ${active ? 'text-dr-accent' : 'text-dr-text-dark hover:text-dr-accent'}`}>
+    <Link to={to} className={`relative font-woodford text-sm font-medium transition-colors duration-300 ${active ? 'text-dr-accent' : 'text-dr-text-dark hover:text-dr-accent'}`}>
         {label}
         <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-dr-accent transition-all duration-300 group-hover:w-full ${active ? 'w-full' : ''}`}></span>
     </Link>
@@ -175,7 +175,7 @@ const MobileNavLink = ({ to, label, active, isOpen, delay, onClick }) => {
             href={to}
             onClick={handleClick}
             style={{ transitionDelay: isOpen ? delay : '0ms' }}
-            className={`font-lato text-3xl font-bold transition-all duration-700 ease-out transform cursor-pointer ${active ? 'text-dr-accent' : 'text-dr-text-dark'
+            className={`font-woodford text-3xl font-bold transition-all duration-700 ease-out transform cursor-pointer ${active ? 'text-dr-accent' : 'text-dr-text-dark'
                 } ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
         >
             {label}

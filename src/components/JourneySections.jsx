@@ -8,22 +8,28 @@ const JourneySections = () => {
         <div className="flex flex-col w-full">
             {/* European Business Award */}
             <VideoCardsSection
-                title="EUROPEAN BUSINESS AWARD"
+                title="European Business Award"
                 bgClass="bg-white"
                 videos={[
                     {
-                        // title: "European Business Award - 1",
-                        youtubeLink: "/Videos/EUROPEAN BUSINESS AWARD/video_1.mp4"
+                        title: "Ones To Watch - EBA 2019",
+                        youtubeLink: "https://www.youtube.com/watch?v=_4rHe0ijvBA&t=1s"
                     },
                     {
-                        youtubeLink: "https://www.youtube.com/watch?v=BdyDktqjdpY"
+                        title: "European Business Awards-National Winner of ITAY",
+                        youtubeLink: "https://www.youtube.com/watch?v=WautPEeOkOw"
                     }
                 ]}
             />
 
             {/* Engage Carousel */}
             <ImageCarouselSection
-                title="ENGAGE, ENLIGHTEN, ENCOURAGE AND ESPECIALLY...BE YOURSELF!"
+                title={
+                    <>
+                        Engage, Enlighten, Encourage And Especially...<br />
+                        Be Yourself!
+                    </>
+                }
                 imageBasePath="/image/ENGAGE, ENLIGHTEN, ENCOURAGE AND ESPECIALLY...BE YOURSELF!"
                 images={[
                     'slide_01.jpg',
@@ -43,12 +49,18 @@ const JourneySections = () => {
 
             {/* Own Woman */}
             <VideoCardsSection
-                title="I'M MY OWN WOMAN"
+                title="I'm My Own Woman"
                 bgClass="bg-slate-50"
                 count={2}
                 videos={[
-                    { title: "Dummy Video Title 1", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" },
-                    { title: "Dummy Video Title 2", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" }
+                    {
+                        title: "Inspirational Story of Dr Aperna Volluru",
+                        youtubeLink: "https://www.youtube.com/watch?v=v-b07V2jQHQ"
+                    },
+                    {
+                        title: "COWE 2019 Award",
+                        youtubeLink: "https://www.youtube.com/watch?v=OzRvjPFUWvI"
+                    }
                 ]}
             />
 
@@ -72,44 +84,93 @@ const JourneySections = () => {
             />
 
             {/* Student Section */}
-            <JourneyTextSection title="A STUDENT" bgImage="/image/Bg/student_bg.png">
-                <p className="font-bold font-lato text-2xl italic mb-4">
-                    My Dad made me in a hot furnace and the grit cultivated by my Grandma never let me give up.
+            <JourneyTextSection title="A Student" bgImage="/image/Bg/student_bg.png">
+                <p className=" font-woodford text-2xl italic mb-4">
+                    My father often said, “I have made you in a hot furnace.” The grit cultivated by my grandmother ensured that I never gave up, no matter how difficult the journey became.
                 </p>
                 <p>
-                    We have to develop ways to face and conquer the resistance we face in those moments when we are trying to do something and feel like we can't produce anything even remotely good.
+                    As the daughter of an Army officer, I could have comfortably stayed and studied in India. But an ambition to become “someone someday” took me to the United Kingdom for higher education. When I left home at the age of seventeen, my father told me, “I only have money for your flight ticket, but I know you will never give up and will always uphold our family’s honour.”
                 </p>
                 <p>
-                    Being an Army Officer’s daughter, I had every luxury to stay, study and settle in India. An ambition to be ‘the some day some one’ made to go to UK for higher education. All my Dad had to say was, “I have money only for your flight ticket. But I have made you in hot furnace and so I know you will never give up come what may and never heed to any action that would bring shame to our family.”
+                    My university years were the most testing period of my life. My scholarship covered only my tuition fees, so I worked small jobs to pay for rent and food. I walked 12–16 kilometres every day between my room, workplace, and university, and even worked as a dog walker to sustain myself.
                 </p>
                 <p>
-                    I was 17 years then and I’m 47 years now. Three decades have passed by, and I grew from student to an IT Consultant to a wife to a mother to finally an entrepreneur who has today to share so much with the young budding Entrepreneurs. I take pride in saying that I have never given up. We all have those moments where we are trying to do something and feel like we can't produce anything even remotely good. We have to develop ways to face and conquer the resistance we face in these moments. I have adopted a lot of techniques into my own development process. Like an athlete, I always worked on a schedule, not just when I felt motivated. I approached my work like a pro, not an amateur. I did the most important things first and didn’t shirk responsibilities. All this is like a prayer that I said everyday and with every passing day I got stronger and tougher.
+                    Despite these challenges, perseverance paid off. In my third year, I topped my subject at the University of Sussex, and my achievement was featured on the front page of a local newspaper. Later, I received the UK Queen’s Award for Excellence in Studies, becoming the only non-British recipient of this honour in 27 years.
                 </p>
                 <p>
-                    Five years of my University life were the most testing times of my life. My scholarship was just enough for my tuition fee. Besides fee, I had to pay for my room rent and food. I never bought a set of clothes for myself in the first three years of my university. I walked everyday over 12 to 16 kms. From my room to workplace to University and back. I worked as a dog walker for three years and I always prayed God to keep the old lady and the old dog alive at least until I finished my university as both of them were gentle, kind and paid her enough to stay back in UK and finish my studies. It was not until third year of my university that when I topped my subject in the University of Sussex (UK) and my name was on the front page of the local newspaper that I got a bigger room, a bicycle presented by my house owner and a decent job in the university campus. This was the first milestone of my life in Europe.
+                    Looking back, those difficult years taught me the most important lesson of my life: success is built on discipline, resilience, and the courage to continue even when the odds seem overwhelming.
                 </p>
-                <p>
-                    Those three years all I had was just a sandwich to eat and a sleeping bag to sleep. No bed and no food. I even forgot how a kitchen looked but those were the years when my Grandma’s stories had their maximum impact on me. The grit cultivated by my Grandma never let me give up. When Mother Sita from the royal palace could live for 14 years in Ashok Vatika, why not me... There was nothing to complain. I never ever thought what my peers had to say or think about me. I continued to work and study. The next milestone was when I got the UK Queen’s Award for Excellence in my studies. I have been the only non Brit to have received this Award in last 27 years.
-                </p>
+
             </JourneyTextSection>
 
             {/* Researcher Section */}
-            <JourneyTextSection title="A RESEARCHER">
-                <p className="font-bold font-lato text-2xl italic mb-4 text-dr-accent">
+            <JourneyTextSection title="A Researcher">
+                <p className="font-bold font-woodford text-2xl italic mb-4 text-dr-accent">
                     “Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world,” said Albert Einstein.
                 </p>
                 <p>
-                    I ‘m a researcher and my job is to see what everybody else has seen, and think what nobody else has thought. Having a PhD in Psychology from University of Essex (UK), I have been doing research for more than three decades now on how humans think and why they act the way they do, how criminals think, but mainly how children think. I study some children from birth and see how society and human nature shapes them. I am a dedicated Clinical Child Psychologist as well. My patients are my top priority, and I do whatever I can to ensure their well-being.
+                    I have always believed that the role of a researcher is to see what everyone else has seen, and think what no one else has thought.
                 </p>
                 <p>
-                    My team of Psychologists, experts of Neurosciences, especially in developing the Right Brain, educationists and content writers, under my tutelage developed the Curriculum which is the backbone of My School ITALY and RITZY SCHOOLS and the teaching methodologies that are par excellence. The teaching tool, DECANT and Assessment System, MILESTONES is the result of my 30 years of experience in the Early Childhood Education and Care (ECEC) sector and my research as Child Psychologist.
+                    With a PhD in Psychology from the University of Essex (UK) and more than three decades of interdisciplinary research, my work has focused on understanding how human beings think, how environments shape behaviour, and most importantly how children develop cognitively, emotionally, and socially from the earliest years of life.
                 </p>
                 <p>
-                    In 2014, when the American University in Washington D.C. accepted my papers to introduce Neuro Linguistic Programming (NLP) in ECEC sector and My School ITALY became the FIRST Preschool in the WORLD to introduce NLP in its teaching methodology. Both My School ITALY and RITZY SCHOOLS have very high European standards of running and managing the Preschools. Hence, our Franchisees and our teaching staff are trained for 250 hours. The RITZY GROUP staff are available 24/7 for the teaching staff and to the management of Franchised Schools via their Back Office to help them and resolve any rising queries or issues.
+                    Over the years, I have studied human development across multiple contexts—examining how biological predispositions, environment, and social structures interact to shape individuals. My research has particularly focused on early childhood development, observing how children grow from birth and how learning environments influence their developmental trajectories.
+                </p>
+                <p>
+                    This long journey of research and real-world application ultimately led to the creation of NeuroPi, a deep-technology platform designed to integrate neuroscience, genetics, epigenetics, and artificial intelligence to better understand and support human development.
                 </p>
 
                 <div className="mt-8">
-                    <h3 className="font-lato font-bold text-xl text-dr-dark-purple mb-4">Some of my Professional Affiliations:</h3>
+                    <h3 className="font-woodford  text-xl text-dr-accent mb-4">Translating Research into Scalable Systems</h3>
+                    <p className="mb-4">
+                        My research has not remained confined to academia. Over the past three decades, it has been translated into practical educational frameworks and developmental systems.
+                    </p>
+                    <p className="mb-4">
+                        Working with a multidisciplinary team of psychologists, neuroscientists, educators, and curriculum designers, we developed the foundational learning architecture behind My School ITALY and Ritzy Schools. This included the creation of structured developmental tools such as DECANT, a teaching framework, and MILESTONES, a developmental assessment system.
+                    </p>
+                    <p>
+                        Both frameworks emerged from decades of observation, research, and experimentation in early childhood education, enabling educators to better understand and support children’s cognitive and emotional development.
+                    </p>
+                </div>
+
+                <div className="mt-8">
+                    <h3 className="font-woodford  text-xl text-dr-accent mb-4">Innovation in Early Childhood Education</h3>
+                    <p className="mb-4">
+                        In 2014, my research papers were accepted by the American University in Washington, D.C., supporting the introduction of Neuro-Linguistic Programming (NLP) principles into Early Childhood Education and Care (ECEC).
+                    </p>
+                    <p className="mb-4">
+                        Following this work, My School ITALY became one of the first preschools globally to integrate NLP principles into early childhood learning environments, creating new approaches to communication, cognitive development, and experiential learning for young children.
+                    </p>
+                    <p className="mb-4">
+                        Today, both My School ITALY and Ritzy Schools operate with strong European operational standards, emphasizing teacher training, structured developmental frameworks, and continuous support systems for educators.
+                    </p>
+                    <p>
+                        Our franchise partners and teaching staff undergo extensive professional training programs, ensuring consistent delivery of high-quality learning environments. In addition, centralized academic and operational support systems allow our teams to provide continuous guidance and support to partner schools.
+                    </p>
+                </div>
+
+                <div className="mt-8">
+                    <h3 className="font-woodford  text-xl text-dr-accent mb-4">From Education Innovation to NeuroPi</h3>
+                    <p className="mb-4">
+                        While building education ecosystems, one fundamental realization emerged: human development systems globally are still disconnected from modern scientific understanding of the brain.
+                    </p>
+                    <p className="mb-4">
+                        This insight led to the development of NeuroPi.
+                    </p>
+                    <p className="mb-4">
+                        NeuroPi represents the culmination of three decades of research in human development, designed to bridge the gap between scientific knowledge of the brain and the real-world systems responsible for developing human potential.
+                    </p>
+                    <p className="mb-4">
+                        Through NeuroPi, our goal is to create a science-driven human development intelligence platform that can help educators, institutions, and families better understand how individuals learn, grow, and perform.
+                    </p>
+                    <p>
+                        Ultimately, NeuroPi seeks to build the infrastructure for personalized human development in the 21st century.
+                    </p>
+                </div>
+
+                <div className="mt-8">
+                    <h3 className="font-woodford  text-xl text-dr-accent mb-4">Some of my Professional Affiliations:</h3>
                     <ul className="list-disc pl-5 space-y-2 text-base text-dr-text-dark">
                         <li>Member of the Society of Italian Anglistica (AIA)</li>
                         <li>Member of the European Society for the Study of English (THEY)</li>
@@ -119,7 +180,7 @@ const JourneySections = () => {
                 </div>
 
                 <div className="mt-8">
-                    <h3 className="font-lato font-bold text-xl text-dr-dark-purple mb-4">Some of my Publications</h3>
+                    <h3 className="font-woodford  text-xl text-dr-accent mb-4">Some of my Publications</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-dr-text-dark">
                         <li>Dr. Aperna RV and Dr Lipson H "Evolving process of speech in Children’s Language Development" (2013), Journal of Educational Measurement.</li>
                         <li>Dr. Aperna RV and Dr W. Acquino "Insights to the Language Development in Children 0-2 years" (2012), Journal of Educational Measurement.</li>
@@ -138,36 +199,57 @@ const JourneySections = () => {
             </JourneyTextSection>
 
             {/* Psychologist Section */}
-            <JourneyTextSection title="A PSYCHOLOGIST">
-                <p className="font-bold font-lato text-2xl italic mb-4 text-dr-accent">
-                    You know too much psychology. When you can’t get mad because you understand everyone’s reasons for doing everything.
+            <JourneyTextSection title="A Neuroscientist">
+                <p className="font-bold font-woodford text-2xl italic mb-4 text-dr-accent">
+                    Understanding the brain so every human can discover their true potential.
+                </p>
+                <p >
+                    When you study the human brain deeply enough, you begin to understand something profound: people rarely act without reasons. Neuroscience teaches us that behaviour is shaped by complex interactions between biology, experience, and environment.
                 </p>
                 <p>
-                    From a successful IT Consultant to getting back to University to complete my Master’s in English from Cambridge and simultaneously Doctorate in Child Psychology from University of Essex , was a different saga of my life. Women we are more vulnerable to situations that demand change. But I have always admired my ability to embrace and be comfortable with vulnerability — a state of being we often shy away from or perceive as weak.
+                    My journey into neuroscience was not linear. I began my career as a successful IT consultant, but a deeper curiosity about how human beings think and develop led me back to academia. I pursued my Master’s degree in English at Cambridge while simultaneously completing my Doctorate in Child Psychology at the University of Essex (UK). During my doctoral journey, my academic mentor was a neuroscientist, which drew me deeply into the study of brain development and the biological foundations of human behaviour.
                 </p>
                 <p>
-                    Behaviours like over-preparation instead of action, seeking too much feedback from others at the cost of our decision-making, and self-exclusion/self-selection (declining from compliments and opportunities because we feel we lack merit) are all conditioned behaviours that we can unlearn, hopefully transcending perfectionism in favour of courage and action.
+                    For more than three decades, my work has focused on understanding how children think, how environments shape their development, and how early experiences influence cognitive and emotional outcomes. This long journey of research ultimately laid the foundation for NeuroPi, a deep-technology platform integrating neuroscience, genetics, epigenetics, and artificial intelligence to better understand and develop human potential.
                 </p>
                 <p>
-                    Getting appointed by the Italian Government as one of the Board Members in the Council for the Integration Program for Foreign Children was one another Milestone in my life. Being an Indian, being coloured, being woman always made me work hard, study more and keep myself updated with the latest developments in child psychology. My thousands of articles got published year on year and I was soon second to none. I grew above and over the differentiation of sex, colour, creed, race and religion. I could do all this because of GRIT injected into my blood stream by my Grandma. The way she lived day by day, years and years always inspired me to make everyday of my life as special as it could be.
+                    Along the way, I learned that vulnerability and uncertainty are not weaknesses but powerful drivers of innovation. Many behaviours that hold individuals back—over-preparation instead of action, excessive dependence on external validation, or self-exclusion from opportunities—are conditioned responses that can be unlearned. True progress comes when we replace perfectionism with courage and action.
+                </p>
+                <p>
+                    Another milestone in my journey came when I was appointed by the Italian Government as a Board Member in the Council for the Integration Program for Foreign Children, where I contributed to initiatives supporting the development and integration of children from diverse cultural backgrounds.
+                </p>
+                <p>
+                    As an Indian woman working internationally, I often felt the need to work harder, study deeper, and constantly update myself with the latest developments in developmental science and neuroscience. Over the years, thousands of my research articles and writings were published, allowing my work to reach educators, researchers, and institutions across different countries.
+                </p>
+                <p>
+                    The resilience that carried me through this journey came from my grandmother. The grit she instilled in me shaped the way I approach both life and work. Her example taught me to treat every day as an opportunity to build something meaningful.
+                </p>
+                <p>
+                    Today, that same spirit of curiosity, resilience, and scientific inquiry drives my work through NeuroPi, where my three decades of research are being translated into a global human development intelligence platform designed to unlock human potential through science and technology.
                 </p>
             </JourneyTextSection>
 
             {/* Brain Wider */}
             <VideoCardsSection
-                title="BRAIN IS WIDER THAN THE SKY"
+                title="The Brain Is Wider Than The Sky, Deeper Than The Sea, And Within It Lies The Future Of Humanity."
                 bgClass="bg-slate-50"
                 textClass="text-dr-dark-purple"
                 count={2}
                 videos={[
-                    { title: "Dummy Video Title 1", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" },
-                    { title: "Dummy Video Title 2", description: "Dummy Description for this video.", youtubeLink: "https://dummy-link.com" }
+                    {
+                        title: "Her Excellency Award",
+                        youtubeLink: "https://www.youtube.com/watch?v=OBkq7yOkkEA"
+                    },
+                    {
+                        title: "Dr Aperna with Mukha MuKhi",
+                        youtubeLink: "https://www.youtube.com/watch?v=iSjGV-kIm2o"
+                    }
                 ]}
             />
 
             {/* Inception Carousel */}
             <ImageCarouselSection
-                title="THE INCEPTION"
+                title="The Inception"
                 imageBasePath="/image/THE INCEPTION"
                 images={[
                     'slide_07.jpg',
@@ -204,24 +286,49 @@ const JourneySections = () => {
             </JourneyTextSection>
 
             {/* Philanthropist Section */}
-            <JourneyTextSection title="A PHILANTHROPIST" bgImage="/image/Bg/philanthropist_bg.jpg">
+            <JourneyTextSection title="A Philanthropist & A Creator Global Impact" bgImage="/image/Bg/philanthropist_bg.jpg">
+                <p className="font-bold font-woodford text-2xl italic  text-dr-accent">
+                    The future of humanity will not be decided by machines, but by how well we nurture the human mind.
+                </p>
+
                 <p>
-                    I followed my husband to the most remote parts of Africa to work with civil war and ethnic war injured people. Hundreds and hundreds of dying children due to starvation, lack of medical facilities and pain of losing parents, all made me mould myself into a new person that I'm today. I am a person with passion to work for children across the globe.
+                    My humanitarian journey began in some of the most remote regions of Africa, where I accompanied my husband who was working with communities affected by civil and ethnic conflicts. Witnessing children suffering from starvation, lack of medical care, and the trauma of losing their families profoundly transformed my outlook on life. Those experiences ignited a lifelong commitment in me—to work for children who have been denied opportunities simply because of the circumstances into which they were born.
                 </p>
                 <p>
-                    And now through Ritzy Foundation, I’m able to reach children in India with my most modern methodologies and tools in Early Childhood Education and Care sector. Today I’m working not only with marginalised community children in Telangana, but with the tribal children of Lahaul and Spiti in Himachal Pradesh at the altitude of 13000 ft above sea level. And to be honest, giving them these International Standards of Preschool Education along with Gymnastics and Robotics, gives me more happiness and pleasure than I ever had.
+                    This commitment led to the creation of the Ritzy Foundation, through which we work to bring quality Early Childhood Care and Education (ECCE) to underserved communities. Our initiatives focus on providing children with strong developmental foundations, aligning with the global vision of United Nations Sustainable Development Goals (SDGs), particularly SDG 4: Quality Education and SDG 10: Reduced Inequalities.
                 </p>
                 <p>
-                    The joy in the faces of these kids and the sense of satisfaction I get when I open a new Preschool for these children, keeps my motivation levels high. Setting up Preschools for marginalised classes is just a humble beginning. When I will be able to reach the children in every small town and village, where still a huge population of 0-6 years don’t have access to ECCE, I’d say I’m close to my vision. 2019 has been another Milestone in my life as I was declared by Guinness Book of World Records as the Most Humanitarian Person of the World.
+                    Today, our work extends beyond marginalized communities in Telangana to remote tribal regions such as Lahaul and Spiti in Himachal Pradesh, where children live at altitudes of nearly 13,000 feet above sea level. By providing these children with access to international standards of preschool education, along with exposure to activities such as gymnastics, robotics, and experiential learning, we aim to empower them with the confidence and skills needed to thrive in a rapidly changing world.
                 </p>
+                <p>
+                    The smiles and curiosity of these children serve as a constant reminder of the transformative power of education. Each new preschool we establish is not merely a school—it is a gateway to opportunity for children who previously had none.
+                </p>
+                <p>
+                    However, my vision extends far beyond establishing schools. Millions of children between the ages of 0–6 years in small towns and rural communities still lack access to structured early childhood development. Ensuring that every child begins life with strong cognitive, emotional, and social foundations is essential not only for individual wellbeing but also for building resilient societies. This mission contributes to SDG 3: Good Health and Well-Being, SDG 4: Quality Education, and SDG 8: Decent Work and Economic Growth, as early childhood development directly influences lifelong learning and productivity.
+                </p>
+                <p>
+                    To further scale this impact globally, I founded NeuroPi, a deep-technology platform integrating neuroscience, genetics, epigenetics, and artificial intelligence to create science-driven systems that help societies better understand human potential. Through NeuroPi, our goal is to enable educators, families, and institutions to design environments that nurture cognitive development, emotional resilience, and human capability from the earliest years of life.
+                </p>
+                <p>
+                    While the Ritzy Foundation focuses on grassroots educational access, NeuroPi aims to build a global human development intelligence infrastructure, aligning closely with SDG 3 (Good Health & Well-Being), SDG 4 (Quality Education), and SDG 9 (Industry, Innovation and Infrastructure) by applying scientific insights to human development systems.
+                </p>
+                <p>
+                    In 2019, this humanitarian journey was recognized globally when I was honored as the “Most Humanitarian Person of the World” by the Guinness Book of World Records. Yet for me, the most meaningful recognition continues to be the joy and hope reflected in the faces of children who discover that their future can be brighter than their past.
+                </p>
+                <p>
+                    Ultimately, my work—through both philanthropy and innovation—is guided by one simple belief:<br />
+                    When we invest in understanding and nurturing human potential, we invest in the future of humanity itself.
+                </p>
+
+
             </JourneyTextSection>
 
             {/* Results Beyond Calculation 1 */}
             <ImageCarouselSection
-                title="THE RESULTS WILL BE BEYOND CALCULATION"
+                title="The Results Will Be Beyond Calculation"
                 imageBasePath="/image/THE RESULTS WILL BE BEYOND CALCULATION"
                 images={[
-                   'slide_02.jpg', 'slide_03.jpg', 'slide_04.jpg', 'slide_05.jpg', 'slide_06.jpg', 'slide_07.jpg', 'slide_08.jpg'
+                    'slide_02.jpg', 'slide_03.jpg', 'slide_04.jpg', 'slide_05.jpg', 'slide_06.jpg', 'slide_07.jpg', 'slide_08.jpg'
                 ]}
             />
 
@@ -245,11 +352,11 @@ const JourneySections = () => {
             <section className="py-24 px-6 bg-slate-50">
                 <div className="container mx-auto max-w-7xl">
                     <div className="mb-12 animate-fade-up text-center">
-                        <h2 className="font-lato text-4xl md:text-5xl font-bold mb-4 text-dr-dark-purple uppercase">
+                        <h2 className="font-woodford text-4xl md:text-5xl  mb-4 text-dr-dark-purple uppercase">
                             Empowering Human Potential
                         </h2>
                         <div className="w-24 h-1 bg-dr-accent mx-auto rounded-full mb-6"></div>
-                        <p className="font-bold font-lato text-2xl italic text-dr-accent">
+                        <p className="font-bold font-woodford text-2xl italic text-dr-accent">
                             "Either you run the day or the day runs you."
                         </p>
                     </div>
@@ -258,26 +365,26 @@ const JourneySections = () => {
                         {/* Left Side: Projects Text */}
                         <div className="lg:w-1/2 space-y-10 animate-fade-up">
                             <div>
-                                <h3 className="text-xl font-bold font-lato text-dr-dark-purple mb-3 uppercase tracking-wide">
+                                <h3 className="text-xl font-bold font-woodford text-dr-dark-purple mb-3 uppercase tracking-wide">
                                     Entrepreneur Training and Development
                                 </h3>
-                                <p className="text-dr-text-dark leading-relaxed font-lato">
+                                <p className="text-dr-text-dark leading-relaxed font-woodford">
                                     EMPOWERING PEOPLE & REVITALISING THE COMMUNITY. EDTP created as a powerful engine for encouraging entrepreneurship in economically disadvantaged communities has shown to be the equaliser that allows individuals from variant educational, socio-economic and familial backgrounds to prosper financially.
                                 </p>
                             </div>
                             <div>
-                                <h3 className="text-xl font-bold font-lato text-dr-dark-purple mb-3 uppercase tracking-wide">
+                                <h3 className="text-xl font-bold font-woodford text-dr-dark-purple mb-3 uppercase tracking-wide">
                                     Summer Camps
                                 </h3>
-                                <p className="text-dr-text-dark leading-relaxed font-lato">
+                                <p className="text-dr-text-dark leading-relaxed font-woodford">
                                     STUDENTS GET STRONGER, BRAVER AND CONFIDENT.The Summer Camps that I organise through Ritzy Schools Educational Society introduce the students to Italian geography, language, culture, traditions, art, music, films, food, fun games apart from Aerial Art and Indo-Italian Folk Fitness.
                                 </p>
                             </div>
                             <div>
-                                <h3 className="text-xl font-bold font-lato text-dr-dark-purple mb-3 uppercase tracking-wide">
+                                <h3 className="text-xl font-bold font-woodford text-dr-dark-purple mb-3 uppercase tracking-wide">
                                     Teacher Training and Women Empowerment
                                 </h3>
-                                <p className="text-dr-text-dark leading-relaxed font-lato">
+                                <p className="text-dr-text-dark leading-relaxed font-woodford">
                                     EARLY CHILDHOOD EDUCATION AND CARE (ECEC) FACILITIES and JOB OPPORTUNITIES FOR ALL. Striving to give education to children living in most remote parts of the Globe, geographically inaccessible terrains and to generate employment and bread earning opportunities for women and youth.
                                 </p>
                             </div>
@@ -316,10 +423,10 @@ const JourneySections = () => {
             <section className="py-16 px-6 bg-white text-center">
                 <div className="container mx-auto max-w-4xl animate-fade-up">
                     <a href="https://neuropi.ai/" target="_blank" rel="noopener noreferrer" className="block hover:opacity-80 transition-opacity">
-                        <h2 className="font-lato text-3xl md:text-4xl font-bold mb-6 text-dr-accent">
+                        <h2 className="font-woodford text-3xl md:text-4xl font-bold mb-6 text-dr-accent">
                             NeuroPi: Bridging The Human Potential
                         </h2>
-                        <p className="font-lato text-lg md:text-xl text-dr-text-dark leading-relaxed">
+                        <p className="font-woodford text-lg md:text-xl text-dr-text-dark leading-relaxed">
                             NeuroPi a precision neurogenomic and AI-driven technology suite that helps unlock the full potential of the human brain across every stage of life and every field of performance.
                         </p>
                     </a>
@@ -339,7 +446,7 @@ const JourneySections = () => {
 
             {/* Media Press Images */}
             <ImageCarouselSection
-               
+
                 imageBasePath="/image/THE RESULTS WILL BE BEYOND CALCULATION 2"
                 images={[
                     'slide_01.jpg', 'slide_06.jpg', 'slide_05.jpg', 'slide_03.jpg', 'slide_02.jpg', 'slide_04.jpg'

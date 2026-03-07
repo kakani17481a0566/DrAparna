@@ -37,19 +37,19 @@ const Hero = () => {
       >
         {/* LEFT CONTENT */}
         <div className="z-10">
-          <h2 className="font-lato text-dr-accent tracking-[0.25em] uppercase mb-6 text-sm">
+          <h2 className="font-woodford text-dr-accent tracking-[0.25em] uppercase mb-6 text-sm">
             Pioneering Neuroscience in Early Education
           </h2>
 
-          <h1 className="font-lato text-[60px] md:text-[80px] leading-[1.05] text-dr-dark-purple mb-6">
+          <h1 className="font-woodford  text-[60px] md:text-[80px] leading-[1.05] text-dr-dark-purple mb-6">
             The Visionary
           </h1>
-
-          <p className="font-lato italic text-2xl text-dr-accent mb-8 max-w-xl">
-            “Bridging the gap between scientific discovery and human compassion.”
+      
+          <p className="font-woodford italic text-2xl text-dr-accent mb-8 max-w-xl">
+            Bridging the gap between scientific discovery and human compassion.
           </p>
 
-          <p className="font-lato text-gray-500 leading-relaxed max-w-xl text-lg">
+          <p className="font-woodford text-gray-500 leading-relaxed max-w-xl text-lg">
             From leading data-driven research at the European Union’s Joint
             Research Centre to revolutionizing early childhood curriculums,
             <br />Dr. Aperna Volluru defines what it means to lead with both intellect

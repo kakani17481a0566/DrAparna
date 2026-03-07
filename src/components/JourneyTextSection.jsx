@@ -23,14 +23,14 @@ const JourneyTextSection = ({ title, bgImage, children }) => {
                 
                 {/* Title and Decorative Line */}
                 <div className="mb-12 text-center md:text-left">
-                    <h2 className={`font-lato text-4xl md:text-5xl font-bold mb-6 ${bgImage ? 'text-white' : 'text-dr-dark-purple'}`}>
+                    <h2 className={`font-woodford text-4xl md:text-5xl  mb-6 ${bgImage ? 'text-white' : 'text-dr-dark-purple'}`}>
                         {title}
                     </h2>
                     <div className={`w-24 h-1 rounded-full mx-auto md:mx-0 ${bgImage ? 'bg-dr-accent' : 'bg-dr-accent'}`}></div>
                 </div>
 
                 {/* Content Body */}
-                <div className={`font-lato text-lg md:text-xl leading-relaxed space-y-6 text-justify ${bgImage ? 'text-gray-100' : 'text-dr-text-dark'}`}>
+                <div className={`font-woodford text-lg md:text-xl leading-relaxed space-y-6 text-justify ${bgImage ? 'text-white' : 'text-dr-text-dark'}`}>
                     {children}
                 </div>
 

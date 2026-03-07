@@ -46,7 +46,7 @@ export const milestones = [
     },
     {
         year: "June 2019",
-        title: "European Business Awards",
+        title: "European Business Award",
         content: `<p class="mb-4"><strong>My School ITALY</strong> was chosen among millions of European industries as a <strong>"Ones to Watch" Company</strong> by the European Business Awards for excellence in teaching methodologies.</p>
                   <p class="mb-4">The innovations — <strong>DECANT</strong> (a teaching tool) and <strong>MILESTONES</strong> (an assessment system) — reflect over 30 years of experience in ECEC and deep child psychology research.</p>
                   <p>In 2014, Temple University (USA) accepted my research introducing <strong>Neuro-Linguistic Programming (NLP)</strong> into ECEC, making My School ITALY the <strong>first preschool in the world</strong> to embed NLP into its curriculum.</p>`
