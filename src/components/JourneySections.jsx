@@ -286,7 +286,7 @@ const JourneySections = () => {
             </JourneyTextSection>
 
             {/* Philanthropist Section */}
-            <JourneyTextSection title="A Philanthropist & A Creator Global Impact" bgImage="/image/Bg/philanthropist_bg.jpg">
+            <JourneyTextSection title="A Philanthropist & A Global Impact Creator" bgImage="/image/Bg/philanthropist_bg.jpg">
                 <p className="font-bold font-woodford text-2xl italic  text-dr-accent">
                     The future of humanity will not be decided by machines, but by how well we nurture the human mind.
                 </p>
