@@ -67,7 +67,7 @@ const JourneySections = () => {
             {/* Photographs Carousel */}
             <ImageCarouselSection
                 title="Freezing a Moment"
-                subtitle='"When words become unclear, I shall focus with Photographs."'
+                subtitle='When words become unclear, I shall focus with Photographs.'
                 imageBasePath="/image/When words become unclear, I shall focus with Photographs"
                 images={[
                     'slide_05.jpg',
@@ -105,8 +105,8 @@ const JourneySections = () => {
 
             {/* Researcher Section */}
             <JourneyTextSection title="A Researcher">
-                <p className="font-bold font-woodford text-2xl italic mb-4 text-dr-accent">
-                    “Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world,” said Albert Einstein.
+                <p className=" font-woodford text-2xl italic mb-4 text-dr-accent">
+                    "Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world,” said Albert Einstein.
                 </p>
                 <p>
                     I have always believed that the role of a researcher is to see what everyone else has seen, and think what no one else has thought.
@@ -200,7 +200,7 @@ const JourneySections = () => {
 
             {/* Psychologist Section */}
             <JourneyTextSection title="A Neuroscientist">
-                <p className="font-bold font-woodford text-2xl italic mb-4 text-dr-accent">
+                <p className=" font-woodford text-2xl italic mb-4 text-dr-accent">
                     Understanding the brain so every human can discover their true potential.
                 </p>
                 <p >
@@ -270,7 +270,7 @@ const JourneySections = () => {
             />
 
             {/* Entrepreneur Section */}
-            <JourneyTextSection title="AN ENTREPRENEUR">
+            <JourneyTextSection title="An Entrepreneur">
                 <p>
                     My beloved Mom, the Naughty Princess, always said, “Entrepreneurship is living a few years of your life like most people won’t, so that you can spend the rest of your life like most people can’t.” She transmitted all her qualities of a successful entrepreneur to me. I always had a clear goal that I worked towards each day. I didn’t let short–term profits, negative feedback, or hectic schedules prevent me from continuing the march towards my vision. I made it a habit of building up the people around me — not just once, but over and over and over again.
                 </p>
@@ -436,7 +436,7 @@ const JourneySections = () => {
 
             {/* Media Press Videos */}
             <VideoCardsSection
-                title="MEDIA & PRESS COVERAGE"
+                title="Media & Press Coverage"
                 bgClass="bg-slate-50"
                 count={2}
                 videos={[

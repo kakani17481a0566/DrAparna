@@ -26,7 +26,7 @@ const ImageCarouselSection = ({ title, subtitle, images, imageBasePath }) => {
                             </h2>
                         )}
                         {subtitle && (
-                            <p className="font-woodford text-lg md:text-xl text-dr-accent font-semibold max-w-4xl mx-auto">
+                            <p className="font-woodford text-lg md:text-xl italic text-dr-accent  max-w-4xl mx-auto">
                                 {subtitle}
                             </p>
                         )}

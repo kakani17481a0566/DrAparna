@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="space-y-4">
                     <h3 className="text-2xl font-bold text-white mb-4">Dr. Aperna <span className="text-dr-accent font-light">Volluru</span></h3>
                     <p className="text-sm leading-relaxed text-gray-400">
-                        Pioneering the future of Early Childhood Education through neuroscience, innovation, and unwavering compassion.
+                       Neuroscientist | Global Deep-Tech Founder in Human Development | Entrepreneur | Education Innovator | Philanthropist
                     </p>
                     <div className="flex space-x-4 pt-2">
                         {/* Social Icons */}
@@ -38,9 +38,9 @@ const Footer = () => {
                 <div>
                     <h4 className="text-white font-semibold mb-6">Blog</h4>
                     <ul className="space-y-3 text-sm">
-                        <li><a href="https://dummy-link.com" className="hover:text-dr-accent transition-colors">Privacy Policy</a></li>
-                        <li><a href="https://dummy-link.com" className="hover:text-dr-accent transition-colors">Terms of Service</a></li>
-                        <li><a href="https://dummy-link.com" className="hover:text-dr-accent transition-colors">Cookie Policy</a></li>
+                        <li><a href="https://dummy-link.com" className="hover:text-dr-accent transition-colors">Human Potential & Brain</a></li>
+                        <li><a href="https://dummy-link.com" className="hover:text-dr-accent transition-colors">Why the Future of Education Will Be Brain-Based.</a></li>
+                        <li><a href="https://dummy-link.com" className="hover:text-dr-accent transition-colors">From Genetics to Learning</a></li>
                     </ul>
                 </div>
 
