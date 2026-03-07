@@ -342,8 +342,8 @@ const JourneySections = () => {
                 videos={[
                     { title: "NeuroPi Logo, Mascot & Character Launch", youtubeLink: "https://www.youtube.com/watch?v=vcRkoX52zlY&feature=youtu.be" },
                     { title: "भारत का भविष्य आज से शुरू होता है - NeuroPi", youtubeLink: "https://www.youtube.com/watch?v=9fOgiMlE3Wo&feature=youtu.be" },
-                    { title: "The Mysterious Lamp",  youtubeLink: "https://www.youtube.com/watch?v=wcmNwUNTNOA&feature=youtu.be" },
-                    { title: "Muscle Builders",  youtubeLink: "https://www.youtube.com/watch?v=B31VL1-tgvY&feature=youtu.be" }
+                    { title: "The Mysterious Lamp", youtubeLink: "https://www.youtube.com/watch?v=wcmNwUNTNOA&feature=youtu.be" },
+                    { title: "Muscle Builders", youtubeLink: "https://www.youtube.com/watch?v=B31VL1-tgvY&feature=youtu.be" }
                 ]}
             />
 
@@ -353,12 +353,12 @@ const JourneySections = () => {
             <section className="py-24 px-6 bg-slate-50">
                 <div className="container mx-auto max-w-7xl">
                     <div className="mb-12 animate-fade-up text-center">
-                        <h2 className="font-woodford text-4xl md:text-5xl  mb-4 text-dr-dark-purple uppercase">
+                        <h2 className="font-woodford text-4xl md:text-5xl  mb-4 text-dr-dark-purple ">
                             Empowering Human Potential
                         </h2>
                         <div className="w-24 h-1 bg-dr-accent mx-auto rounded-full mb-6"></div>
-                        <p className="font-bold font-woodford text-2xl italic text-dr-accent">
-                            "Either you run the day or the day runs you."
+                        <p className=" font-woodford text-2xl italic text-dr-accent">
+                            Either you run the day or the day runs you.
                         </p>
                     </div>
 
